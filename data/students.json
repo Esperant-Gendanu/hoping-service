@@ -1,0 +1,14 @@
+[
+  {
+    "id": "DEV-2026-001",
+    "nom": "Kabasele",
+    "prenom": "Jean",
+    "promotion": "Web Dev 1"
+  },
+  {
+    "id": "EXC-2026-02",
+    "nom": "KOMI",
+    "prenom": "Pascal",
+    "promotion": "Web Dev 1"
+  }
+]

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Administration statique Hoping_Service pour préparer le fichier students.json.">
+    <title>Admin | Hoping_Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section id="adminGate" class="site-shell d-flex align-items-center py-4 py-lg-5">
+        <div class="container">
+            <div class="login-card mx-auto p-4 p-md-5 bg-white" style="max-width: 560px;">
+                <div class="text-center mb-4">
+                    <span class="brand-mark mx-auto mb-3"><i class="bi bi-shield-lock"></i></span>
+                    <span class="section-kicker teal mx-auto mb-3"><i class="bi bi-key"></i> Accès admin</span>
+                    <h1 class="h3 fw-bold mb-2">Mot de passe requis</h1>
+                    <p class="text-muted mb-0">Entrez le mot de passe administrateur pour gérer les apprenants.</p>
+                </div>
+
+                <form id="adminLoginForm">
+                    <label for="adminPassword" class="form-label fw-semibold small text-uppercase text-muted">Mot de passe</label>
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                        <input type="password" id="adminPassword" class="form-control" autocomplete="current-password" required>
+                    </div>
+                    <div id="adminLoginError" class="alert alert-danger small d-none py-2" role="alert"></div>
+                    <button class="btn btn-brand btn-lg w-100" type="submit">
+                        <i class="bi bi-unlock me-1"></i> Entrer dans l'administration
+                    </button>
+                </form>
+
+                <p class="text-muted small text-center mt-3 mb-0">Mot de passe par défaut: à changer dans le code avant publication.</p>
+            </div>
+        </div>
+    </section>
+
+    <nav id="adminNav" class="navbar navbar-expand-lg navbar-dark navbar-custom py-3 d-none">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                <span class="brand-mark"><i class="bi bi-shield-lock"></i></span>
+                Administration
+            </a>
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <a href="dashboard.html" class="nav-link-soft"><i class="bi bi-grid me-1"></i> Dashboard</a>
+                <a href="a-propos.html" class="nav-link-soft"><i class="bi bi-person-badge me-1"></i> À propos</a>
+                <button class="btn btn-outline-light btn-sm" type="button" id="lockAdminBtn">
+                    <i class="bi bi-lock me-1"></i> Verrouiller
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="adminApp" class="container py-4 py-lg-5 d-none">
+        <section class="hero-card p-4 p-md-5 mb-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <span class="section-kicker teal mb-3"><i class="bi bi-github"></i> Compatible GitHub Pages</span>
+                    <h1 class="h2 fw-bold mb-2">Gestion des apprenants</h1>
+                    <p class="text-muted mb-0">
+                        Ajoutez, modifiez ou supprimez les apprenants, puis téléchargez le nouveau fichier <strong>students.json</strong> à placer dans le dossier <strong>data</strong>.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-brand" type="button" id="downloadJsonBtn">
+                        <i class="bi bi-download me-1"></i> Télécharger students.json
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div id="statusMessage" class="alert d-none" role="alert"></div>
+
+        <div class="row g-4">
+            <section class="col-lg-5">
+                <div class="platform-card shadow-none p-4">
+                    <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                        <div>
+                            <span class="section-kicker mb-2"><i class="bi bi-person-plus"></i> Formulaire</span>
+                            <h2 class="h4 fw-bold mb-0" id="formTitle">Ajouter un apprenant</h2>
+                        </div>
+                        <button class="btn btn-outline-brand btn-sm" type="button" id="resetFormBtn">
+                            <i class="bi bi-plus-circle me-1"></i> Nouveau
+                        </button>
+                    </div>
+
+                    <form id="studentForm" class="row g-3">
+                        <input type="hidden" id="editingId">
+
+                        <div class="col-12">
+                            <label for="studentId" class="form-label fw-semibold small text-uppercase text-muted">Matricule</label>
+                            <input type="text" id="studentId" class="form-control" placeholder="Ex: DEV-2026-001" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="prenom" class="form-label fw-semibold small text-uppercase text-muted">Prénom</label>
+                            <input type="text" id="prenom" class="form-control" placeholder="Jean" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="nom" class="form-label fw-semibold small text-uppercase text-muted">Nom</label>
+                            <input type="text" id="nom" class="form-control" placeholder="Kabasele" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="promotion" class="form-label fw-semibold small text-uppercase text-muted">Promotion</label>
+                            <input type="text" id="promotion" class="form-control" placeholder="Web Dev 1" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label fw-semibold small text-uppercase text-muted">Modules autorisés</label>
+                            <div class="row g-2" id="modulesChoices"></div>
+                            <p class="text-muted small mt-2 mb-0">Si aucun module n'est coché, l'apprenant aura accès à tous les modules comme dans la version actuelle.</p>
+                        </div>
+
+                        <div class="col-12 d-grid">
+                            <button class="btn btn-brand" type="submit">
+                                <i class="bi bi-save me-1"></i> Enregistrer dans la liste
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="col-lg-7">
+                <div class="platform-card shadow-none p-4 mb-4">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
+                        <div>
+                            <span class="section-kicker green mb-2"><i class="bi bi-people"></i> Liste</span>
+                            <h2 class="h4 fw-bold mb-0">Apprenants enregistrés</h2>
+                        </div>
+                        <div class="input-group" style="max-width: 300px;">
+                            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                            <input type="search" class="form-control" id="searchInput" placeholder="Rechercher">
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Matricule</th>
+                                    <th>Apprenant</th>
+                                    <th>Promotion</th>
+                                    <th>Modules</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="studentsTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="platform-card shadow-none p-4">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
+                        <div>
+                            <span class="section-kicker amber mb-2"><i class="bi bi-braces"></i> JSON final</span>
+                            <h2 class="h4 fw-bold mb-0">Aperçu de students.json</h2>
+                        </div>
+                        <button class="btn btn-outline-brand btn-sm" type="button" id="copyJsonBtn">
+                            <i class="bi bi-clipboard me-1"></i> Copier
+                        </button>
+                    </div>
+                    <textarea id="jsonPreview" class="form-control font-monospace small" rows="12" spellcheck="false"></textarea>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <button class="btn btn-outline-brand btn-sm" type="button" id="applyJsonBtn">
+                            <i class="bi bi-arrow-repeat me-1"></i> Appliquer le JSON modifié
+                        </button>
+                        <label class="btn btn-outline-brand btn-sm mb-0">
+                            <i class="bi bi-upload me-1"></i> Importer un JSON
+                            <input type="file" id="importJsonInput" accept="application/json,.json" hidden>
+                        </label>
+                        <button class="btn btn-outline-danger btn-sm" type="button" id="reloadPublishedBtn">
+                            <i class="bi bi-arrow-clockwise me-1"></i> Recharger le JSON publié
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const ADMIN_PASSWORD_HASH = "3483e347ea22bfc3ac0dd58ba963e3b3212bf3094577f450d2962c3876554821";
+        const ADMIN_SESSION_KEY = "hopingAdminUnlocked";
+        const LOCAL_STUDENTS_KEY = "hopingStudentsData";
+
+        const adminGate = document.getElementById("adminGate");
+        const adminNav = document.getElementById("adminNav");
+        const adminApp = document.getElementById("adminApp");
+        const adminLoginForm = document.getElementById("adminLoginForm");
+        const adminPassword = document.getElementById("adminPassword");
+        const adminLoginError = document.getElementById("adminLoginError");
+
+        async function sha256(value) {
+            if (!window.crypto || !window.crypto.subtle) {
+                throw new Error("Le chiffrement du navigateur est indisponible. Ouvrez la page via HTTPS ou localhost.");
+            }
+
+            const encoded = new TextEncoder().encode(value);
+            const buffer = await crypto.subtle.digest("SHA-256", encoded);
+            return Array.from(new Uint8Array(buffer))
+                .map((byte) => byte.toString(16).padStart(2, "0"))
+                .join("");
+        }
+
+        function unlockAdmin() {
+            adminGate.classList.add("d-none");
+            adminNav.classList.remove("d-none");
+            adminApp.classList.remove("d-none");
+            sessionStorage.setItem(ADMIN_SESSION_KEY, "true");
+            loadStudents();
+        }
+
+        adminLoginForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            adminLoginError.classList.add("d-none");
+
+            try {
+                const hash = await sha256(adminPassword.value);
+                if (hash !== ADMIN_PASSWORD_HASH) {
+                    adminLoginError.textContent = "Mot de passe incorrect.";
+                    adminLoginError.classList.remove("d-none");
+                    adminPassword.select();
+                    return;
+                }
+
+                adminPassword.value = "";
+                unlockAdmin();
+            } catch (error) {
+                adminLoginError.textContent = error.message;
+                adminLoginError.classList.remove("d-none");
+            }
+        });
+
+        document.getElementById("lockAdminBtn").addEventListener("click", () => {
+            sessionStorage.removeItem(ADMIN_SESSION_KEY);
+            window.location.reload();
+        });
+
+        const modules = [
+            { id: "MOD-INF01", label: "Initiation informatique" },
+            { id: "MOD-BUR02", label: "Bureautique Word & Excel" },
+            { id: "MOD-PRO03", label: "CV & lettres" },
+            { id: "MOD-IA04", label: "IA au quotidien" }
+        ];
+
+        let students = [];
+
+        const form = document.getElementById("studentForm");
+        const table = document.getElementById("studentsTable");
+        const jsonPreview = document.getElementById("jsonPreview");
+        const statusMessage = document.getElementById("statusMessage");
+        const searchInput = document.getElementById("searchInput");
+        const modulesChoices = document.getElementById("modulesChoices");
+
+        function showStatus(message, type = "success") {
+            statusMessage.textContent = message;
+            statusMessage.className = `alert alert-${type}`;
+            window.setTimeout(() => statusMessage.classList.add("d-none"), 3500);
+        }
+
+        function cleanText(value) {
+            return value.trim().replace(/\s+/g, " ");
+        }
+
+        function renderModuleChoices(selectedModules = []) {
+            modulesChoices.innerHTML = modules.map((module) => {
+                const checked = selectedModules.includes(module.id) ? "checked" : "";
+                return `
+                    <div class="col-sm-6">
+                        <label class="empty-panel d-flex gap-2 align-items-start p-2 h-100">
+                            <input class="form-check-input mt-1 module-check" type="checkbox" value="${module.id}" ${checked}>
+                            <span>
+                                <strong class="d-block small">${module.id}</strong>
+                                <span class="text-muted small">${module.label}</span>
+                            </span>
+                        </label>
+                    </div>
+                `;
+            }).join("");
+        }
+
+        function getSelectedModules() {
+            return Array.from(document.querySelectorAll(".module-check:checked")).map((input) => input.value);
+        }
+
+        function normalizeStudent(student) {
+            const normalized = {
+                id: cleanText(student.id || ""),
+                nom: cleanText(student.nom || ""),
+                prenom: cleanText(student.prenom || ""),
+                promotion: cleanText(student.promotion || "")
+            };
+
+            if (Array.isArray(student.modules) && student.modules.length > 0) {
+                normalized.modules = student.modules.filter((moduleId) => modules.some((module) => module.id === moduleId));
+            }
+
+            return normalized;
+        }
+
+        function sortStudents() {
+            students.sort((a, b) => a.nom.localeCompare(b.nom, "fr") || a.prenom.localeCompare(b.prenom, "fr"));
+        }
+
+        function saveLocalStudents() {
+            localStorage.setItem(LOCAL_STUDENTS_KEY, JSON.stringify(students));
+        }
+
+        function render() {
+            sortStudents();
+            saveLocalStudents();
+            const query = searchInput.value.trim().toLowerCase();
+            const filtered = students.filter((student) => {
+                const text = `${student.id} ${student.prenom} ${student.nom} ${student.promotion}`.toLowerCase();
+                return text.includes(query);
+            });
+
+            table.innerHTML = filtered.map((student) => {
+                const modulesLabel = student.modules && student.modules.length ? student.modules.join(", ") : "Tous";
+                return `
+                    <tr>
+                        <td><span class="fw-semibold">${student.id}</span></td>
+                        <td>${student.prenom} ${student.nom}</td>
+                        <td>${student.promotion}</td>
+                        <td><span class="badge text-bg-light border">${modulesLabel}</span></td>
+                        <td class="text-end">
+                            <button class="btn btn-outline-brand btn-sm me-1" type="button" data-action="edit" data-id="${student.id}">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button class="btn btn-outline-danger btn-sm" type="button" data-action="delete" data-id="${student.id}">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            }).join("") || `
+                <tr>
+                    <td colspan="5" class="text-center text-muted py-4">Aucun apprenant trouvé.</td>
+                </tr>
+            `;
+
+            jsonPreview.value = JSON.stringify(students, null, 2);
+        }
+
+        function resetForm() {
+            form.reset();
+            document.getElementById("editingId").value = "";
+            document.getElementById("formTitle").textContent = "Ajouter un apprenant";
+            renderModuleChoices();
+        }
+
+        function editStudent(id) {
+            const student = students.find((item) => item.id === id);
+            if (!student) return;
+
+            document.getElementById("editingId").value = student.id;
+            document.getElementById("studentId").value = student.id;
+            document.getElementById("prenom").value = student.prenom;
+            document.getElementById("nom").value = student.nom;
+            document.getElementById("promotion").value = student.promotion;
+            document.getElementById("formTitle").textContent = `Modifier ${student.prenom} ${student.nom}`;
+            renderModuleChoices(student.modules || []);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function deleteStudent(id) {
+            const student = students.find((item) => item.id === id);
+            if (!student) return;
+
+            const confirmed = window.confirm(`Supprimer ${student.prenom} ${student.nom} (${student.id}) ?`);
+            if (!confirmed) return;
+
+            students = students.filter((item) => item.id !== id);
+            render();
+            showStatus("Apprenant supprimé de la liste. Téléchargez le JSON pour conserver ce changement.");
+        }
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const editingId = document.getElementById("editingId").value;
+            const student = normalizeStudent({
+                id: document.getElementById("studentId").value,
+                prenom: document.getElementById("prenom").value,
+                nom: document.getElementById("nom").value,
+                promotion: document.getElementById("promotion").value,
+                modules: getSelectedModules()
+            });
+
+            if (!student.id || !student.nom || !student.prenom || !student.promotion) {
+                showStatus("Veuillez compléter tous les champs obligatoires.", "danger");
+                return;
+            }
+
+            const duplicate = students.some((item) => item.id === student.id && item.id !== editingId);
+            if (duplicate) {
+                showStatus("Ce matricule existe déjà.", "danger");
+                return;
+            }
+
+            if (editingId) {
+                students = students.map((item) => item.id === editingId ? student : item);
+                showStatus("Apprenant modifié dans la liste.");
+            } else {
+                students.push(student);
+                showStatus("Apprenant ajouté dans la liste.");
+            }
+
+            resetForm();
+            render();
+        });
+
+        table.addEventListener("click", (event) => {
+            const button = event.target.closest("button[data-action]");
+            if (!button) return;
+
+            const id = button.dataset.id;
+            if (button.dataset.action === "edit") editStudent(id);
+            if (button.dataset.action === "delete") deleteStudent(id);
+        });
+
+        searchInput.addEventListener("input", render);
+
+        document.getElementById("resetFormBtn").addEventListener("click", resetForm);
+
+        document.getElementById("downloadJsonBtn").addEventListener("click", () => {
+            const blob = new Blob([JSON.stringify(students, null, 2)], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = "students.json";
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            URL.revokeObjectURL(url);
+            showStatus("Fichier students.json généré. Placez-le dans le dossier data avant de publier sur GitHub.");
+        });
+
+        document.getElementById("copyJsonBtn").addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText(jsonPreview.value);
+                showStatus("JSON copié dans le presse-papiers.");
+            } catch (error) {
+                jsonPreview.select();
+                showStatus("Copie automatique indisponible. Le JSON est sélectionné.", "warning");
+            }
+        });
+
+        document.getElementById("applyJsonBtn").addEventListener("click", () => {
+            try {
+                const parsed = JSON.parse(jsonPreview.value);
+                if (!Array.isArray(parsed)) throw new Error("Le JSON doit être un tableau.");
+                students = parsed.map(normalizeStudent).filter((student) => student.id && student.nom && student.prenom && student.promotion);
+                resetForm();
+                render();
+                showStatus("JSON appliqué à la liste.");
+            } catch (error) {
+                showStatus(`JSON invalide: ${error.message}`, "danger");
+            }
+        });
+
+        document.getElementById("importJsonInput").addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = () => {
+                jsonPreview.value = reader.result;
+                document.getElementById("applyJsonBtn").click();
+            };
+            reader.readAsText(file);
+            event.target.value = "";
+        });
+
+        document.getElementById("reloadPublishedBtn").addEventListener("click", () => {
+            const confirmed = window.confirm("Effacer la liste locale et recharger data/students.json ?");
+            if (!confirmed) return;
+
+            localStorage.removeItem(LOCAL_STUDENTS_KEY);
+            loadStudents();
+        });
+
+        async function loadStudents() {
+            renderModuleChoices();
+
+            try {
+                const response = await fetch("data/students.json", { cache: "no-store" });
+                if (!response.ok) throw new Error("Impossible de charger data/students.json.");
+                const data = await response.json();
+                students = Array.isArray(data) ? data.map(normalizeStudent) : [];
+                render();
+                showStatus("Liste chargée depuis data/students.json.");
+            } catch (error) {
+                students = [];
+                render();
+                showStatus(`${error.message} Vous pouvez importer un fichier JSON manuellement.`, "warning");
+            }
+        }
+
+        async function loadStudents() {
+            renderModuleChoices();
+
+            try {
+                const localStudents = localStorage.getItem(LOCAL_STUDENTS_KEY);
+                let data = null;
+
+                if (localStudents) {
+                    data = JSON.parse(localStudents);
+                    showStatus("Liste locale chargée. La connexion utilisera cette version dans ce navigateur.");
+                } else {
+                    const response = await fetch("data/students.json", { cache: "no-store" });
+                    if (!response.ok) throw new Error("Impossible de charger data/students.json.");
+                    data = await response.json();
+                    showStatus("Liste chargée depuis data/students.json.");
+                }
+
+                students = Array.isArray(data) ? data.map(normalizeStudent) : [];
+                render();
+            } catch (error) {
+                students = [];
+                render();
+                showStatus(`${error.message} Vous pouvez importer un fichier JSON manuellement.`, "warning");
+            }
+        }
+
+        if (sessionStorage.getItem(ADMIN_SESSION_KEY) === "true") {
+            unlockAdmin();
+        }
+    </script>
+</body>
+</html>
