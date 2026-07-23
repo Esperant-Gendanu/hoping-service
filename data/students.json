@@ -6,6 +6,28 @@
     "promotion": "Web Dev 1"
   },
   {
+    "id": "DEV-2026-003",
+    "nom": "KABEYA",
+    "prenom": "NEGRO",
+    "promotion": "Word-1",
+    "modules": [
+      "MOD-INF01",
+      "MOD-BUR02",
+      "MOD-PRO03"
+    ]
+  },
+  {
+    "id": "132001",
+    "nom": "Kikandu",
+    "prenom": "Bernisse",
+    "promotion": "Excel-1",
+    "modules": [
+      "MOD-INF01",
+      "MOD-BUR02",
+      "MOD-PRO03"
+    ]
+  },
+  {
     "id": "EXC-2026-02",
     "nom": "KOMI",
     "prenom": "Pascal",
