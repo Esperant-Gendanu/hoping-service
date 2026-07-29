@@ -1,9 +1,15 @@
 [
   {
-    "id": "DEV-2026-001",
-    "nom": "Kabasele",
-    "prenom": "Jean",
-    "promotion": "Web Dev 1"
+    "id": "ALICE-001-2020",
+    "nom": "BEYA",
+    "prenom": "Alice",
+    "promotion": "Word-1",
+    "modules": [
+      "MOD-INF01",
+      "MOD-BUR02"
+      
+    ]
+    
   },
   {
     "id": "DEV-2026-003",
