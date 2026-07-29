@@ -1,25 +1,11 @@
 [
   {
-    "id": "ALICE-001-2020",
+    "id": "DEV-2026-003",
     "nom": "BEYA",
     "prenom": "Alice",
     "promotion": "Word-1",
     "modules": [
-      "MOD-INF01",
       "MOD-BUR02"
-      
-    ]
-    
-  },
-  {
-    "id": "DEV-2026-003",
-    "nom": "KABEYA",
-    "prenom": "NEGRO",
-    "promotion": "Word-1",
-    "modules": [
-      "MOD-INF01",
-      "MOD-BUR02",
-      "MOD-PRO03"
     ]
   },
   {
@@ -32,11 +18,5 @@
       "MOD-BUR02",
       "MOD-PRO03"
     ]
-  },
-  {
-    "id": "EXC-2026-02",
-    "nom": "KOMI",
-    "prenom": "Pascal",
-    "promotion": "Web Dev 1"
   }
 ]
