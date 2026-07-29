@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Supports de cours Hoping_Service pour Word, Excel, PowerPoint et les outils bureautiques.">
+    <title>Supports de cours | Hoping_Service</title>
+    <script src="../assets/js/auth-guard.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="../dashboard.html">
+                <span class="brand-mark"><i class="bi bi-arrow-left"></i></span>
+                Retour au tableau de bord
+            </a>
+            <a href="../a-propos.html" class="nav-link-soft"><i class="bi bi-person-badge me-1"></i> Formateur</a>
+        </div>
+    </nav>
+
+    <main class="container py-4 py-lg-5">
+        <section class="hero-card p-4 p-md-5 mb-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="stat-badge green">Supports</span>
+                        <span class="stat-badge"><i class="bi bi-files"></i> Word, Excel, PowerPoint</span>
+                        <span class="stat-badge amber"><i class="bi bi-person-workspace"></i> Espérant GENDANU</span>
+                    </div>
+                    <h1 class="h2 fw-bold mb-2">Supports de cours</h1>
+                    <p class="text-muted mb-0">Choisissez une application et une version pour ouvrir le support correspondant.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <span class="icon-box icon-navy"><i class="bi bi-file-earmark-pdf"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-4">
+            <aside class="col-lg-3">
+                <div class="menu-card p-3">
+                    <h2 class="h6 fw-bold mb-3">Catégories</h2>
+                    <nav class="d-grid gap-2">
+                        <a href="#word" class="menu-link"><i class="bi bi-file-earmark-word"></i> Word</a>
+                        <a href="#excel" class="menu-link"><i class="bi bi-file-earmark-excel"></i> Excel</a>
+                        <a href="#powerpoint" class="menu-link"><i class="bi bi-file-earmark-slides"></i> PowerPoint</a>
+                        <a href="#autres" class="menu-link"><i class="bi bi-grid-3x3-gap"></i> Autres outils</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <div class="col-lg-9">
+                <section id="word" class="platform-card shadow-none p-4 mb-4">
+                    <span class="section-kicker mb-3"><i class="bi bi-file-earmark-word"></i> Microsoft Word</span>
+                    <div class="support-grid">
+                        <a class="support-tile" href="word/word-2016.pdf" target="_blank" rel="noopener">
+                            <span class="support-icon icon-blue"><i class="bi bi-file-earmark-word"></i></span>
+                            <span>
+                                <strong>Word 2016</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-blue"><i class="bi bi-file-earmark-word"></i></span>
+                            <span>
+                                <strong>Word 2019</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-blue"><i class="bi bi-file-earmark-word"></i></span>
+                            <span>
+                                <strong>Word 2021</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-blue"><i class="bi bi-file-earmark-word"></i></span>
+                            <span>
+                                <strong>Word 365</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="excel" class="platform-card shadow-none p-4 mb-4">
+                    <span class="section-kicker green mb-3"><i class="bi bi-file-earmark-excel"></i> Microsoft Excel</span>
+                    <div class="support-grid">
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-green"><i class="bi bi-file-earmark-excel"></i></span>
+                            <span>
+                                <strong>Excel 2016</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-green"><i class="bi bi-file-earmark-excel"></i></span>
+                            <span>
+                                <strong>Excel 2019</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-green"><i class="bi bi-file-earmark-excel"></i></span>
+                            <span>
+                                <strong>Excel 2021</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-green"><i class="bi bi-file-earmark-excel"></i></span>
+                            <span>
+                                <strong>Excel 365</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="powerpoint" class="platform-card shadow-none p-4 mb-4">
+                    <span class="section-kicker amber mb-3"><i class="bi bi-file-earmark-slides"></i> Microsoft PowerPoint</span>
+                    <div class="support-grid">
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-amber"><i class="bi bi-file-earmark-slides"></i></span>
+                            <span>
+                                <strong>PowerPoint 2016</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-amber"><i class="bi bi-file-earmark-slides"></i></span>
+                            <span>
+                                <strong>PowerPoint 2019</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-amber"><i class="bi bi-file-earmark-slides"></i></span>
+                            <span>
+                                <strong>PowerPoint 2021</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-amber"><i class="bi bi-file-earmark-slides"></i></span>
+                            <span>
+                                <strong>PowerPoint 365</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="autres" class="platform-card shadow-none p-4">
+                    <span class="section-kicker teal mb-3"><i class="bi bi-grid-3x3-gap"></i> Autres outils</span>
+                    <div class="support-grid">
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-teal"><i class="bi bi-envelope-paper"></i></span>
+                            <span>
+                                <strong>Outlook</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-navy"><i class="bi bi-database"></i></span>
+                            <span>
+                                <strong>Access</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-teal"><i class="bi bi-cloud-arrow-up"></i></span>
+                            <span>
+                                <strong>OneDrive</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                        <a class="support-tile" href="#">
+                            <span class="support-icon icon-navy"><i class="bi bi-microsoft-teams"></i></span>
+                            <span>
+                                <strong>Teams</strong>
+                                <small>Support PDF</small>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
