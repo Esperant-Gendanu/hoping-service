@@ -34,5 +34,17 @@
       "MOD-PRO03",
       "MOD-IA04"
     ]
+  },
+  {
+    "id": "TS-AY2026",
+    "nom": "Yayogo",
+    "prenom": "Alice",
+    "promotion": "BUREAUTIQUE-1",
+    "modules": [
+      "MOD-INF01",
+      "MOD-BUR02",
+      "MOD-PRO03",
+      "MOD-IA04"
+    ]
   }
 ]
