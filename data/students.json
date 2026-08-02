@@ -18,5 +18,17 @@
       "MOD-BUR02",
       "MOD-PRO03"
     ]
+  },
+  {
+    "id": "2005",
+    "nom": "MAKONGO",
+    "prenom": "Liloku",
+    "promotion": "BUREAUTIQUE",
+    "modules": [
+      "MOD-INF01",
+      "MOD-BUR02",
+      "MOD-PRO03",
+      "MOD-IA04"
+    ]
   }
 ]

@@ -1,0 +1,300 @@
+{
+  "id": "MOD-IA04",
+  "slug": "utilisation-ia",
+  "title": "IA au quotidien",
+  "subtitle": "Travailler mieux avec des assistants intelligents.",
+  "description": "Un module pratique pour formuler de bonnes demandes, vérifier les réponses et utiliser l'IA pour gagner du temps sans perdre son esprit critique.",
+  "level": "Intermédiaire",
+  "duration": "7 h",
+  "cover": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80",
+  "icon": "cpu",
+  "introduction": [
+    "Ce module presente l'intelligence artificielle comme un outil de travail pratique, utile pour chercher, reformuler, organiser et produire des contenus.",
+    "L'apprenant va apprendre a formuler une demande claire, a ameliorer une reponse par etapes et a verifier les informations importantes avant de les utiliser.",
+    "Il est important parce que l'IA peut faire gagner du temps, mais elle demande de la methode et de l'esprit critique. Le module aide a utiliser ces outils sans dependance ni confusion."
+  ],
+  "learning": [
+    "Comprendre les usages pertinents des assistants IA.",
+    "Rediger des prompts precis et exploitables.",
+    "Verifier, corriger et reutiliser les reponses obtenues."
+  ],
+  "importance": "Une bonne utilisation de l'IA permet d'ameliorer la productivite, la recherche d'information et la qualite des brouillons tout en gardant le controle humain.",
+  "objectives": [
+    "Comprendre les usages utiles de l'IA.",
+    "Rédiger des prompts efficaces.",
+    "Vérifier et améliorer les productions."
+  ],
+  "skills": [
+    "Prompting",
+    "Recherche assistée",
+    "Esprit critique numérique"
+  ],
+  "prerequisites": [
+    "Savoir utiliser un navigateur web.",
+    "Avoir une adresse e-mail ou un accès à un outil IA."
+  ],
+  "pdfSupports": [
+    {
+      "title": "Support - IA au quotidien",
+      "description": "Emplacement reserve au support PDF du module.",
+      "url": "",
+      "filename": "support-utilisation-ia.pdf",
+      "available": false
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ia-ch1",
+      "title": "Comprendre les assistants IA",
+      "duration": "2 h",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Ce que l'IA peut aider a faire"
+        },
+        {
+          "type": "paragraph",
+          "text": "Un assistant IA peut aider a resumer un texte, reformuler une phrase, proposer un plan, generer des idees, expliquer un concept ou preparer un brouillon. Il est utile quand la demande est claire et que l'utilisateur garde le controle du resultat."
+        },
+        {
+          "type": "paragraph",
+          "text": "L'IA ne remplace pas la verification humaine. Elle peut produire une reponse convaincante mais incorrecte, oublier un contexte important ou inventer une information. La bonne posture consiste a l'utiliser comme aide de travail, pas comme autorite finale."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Objectif du chapitre",
+          "text": "A la fin de cette lecon, vous devez savoir citer des usages utiles de l'IA, reconnaitre ses limites et expliquer pourquoi la verification reste obligatoire."
+        },
+        {
+          "type": "info",
+          "variant": "alert",
+          "title": "Vigilance",
+          "text": "Une reponse peut sembler sure tout en etant fausse. Verifiez les informations importantes."
+        },
+        {
+          "type": "heading",
+          "text": "Usages pertinents"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Resumer un document long.",
+            "Transformer des notes en plan organise.",
+            "Reformuler un texte dans un ton professionnel.",
+            "Proposer des questions de revision.",
+            "Aider a preparer un brouillon de mail ou de lettre.",
+            "Expliquer un mot technique avec des exemples simples."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Limites a connaitre"
+        },
+        {
+          "type": "list",
+          "items": [
+            "L'IA peut se tromper avec assurance.",
+            "Elle ne connait pas toujours votre contexte exact.",
+            "Elle peut produire un texte trop general.",
+            "Elle ne doit pas recevoir de donnees confidentielles sans autorisation.",
+            "Elle ne remplace pas une source officielle ou un professionnel qualifie."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Activite pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Demandez a un assistant IA de resumer un court article, puis comparez le resume avec le texte original. Notez ce qui est exact, ce qui manque et ce qui doit etre reformule. Cette verification est une competence centrale."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quelle attitude adopter face à une réponse IA importante ?",
+          "choices": [
+            "La copier sans vérifier",
+            "La vérifier avec une source fiable",
+            "La supprimer automatiquement",
+            "La partager comme preuve officielle"
+          ],
+          "answer": 1,
+          "explanation": "L'utilisateur reste responsable de la vérification."
+        }
+      ]
+    },
+    {
+      "id": "ia-ch2",
+      "title": "Écrire un bon prompt",
+      "duration": "3 h",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Donner contexte, objectif et format"
+        },
+        {
+          "type": "paragraph",
+          "text": "Un prompt est une consigne donnee a l'IA. Plus il est precis, plus la reponse a des chances d'etre utile. Un bon prompt indique le contexte, l'objectif, le public vise, le format attendu et les contraintes importantes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Un prompt vague produit souvent une reponse vague. Par exemple, Ecris un CV donne un resultat general. En revanche, Aide-moi a ameliorer un CV pour un poste d'assistant administratif, avec un ton professionnel et une liste de competences, donne une direction beaucoup plus claire."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Objectif du chapitre",
+          "text": "A la fin de cette lecon, vous devez savoir construire un prompt complet et ameliorer une demande trop vague."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Element",
+            "Question a se poser",
+            "Exemple"
+          ],
+          "rows": [
+            [
+              "Role",
+              "Qui doit repondre ?",
+              "Agis comme un formateur"
+            ],
+            [
+              "Contexte",
+              "Quelle est la situation ?",
+              "Je prepare une candidature"
+            ],
+            [
+              "Objectif",
+              "Quel resultat voulez-vous ?",
+              "Ameliore mon paragraphe"
+            ],
+            [
+              "Format",
+              "Sous quelle forme ?",
+              "Liste en 5 points"
+            ],
+            [
+              "Contraintes",
+              "Quelles limites ?",
+              "Ton simple, 120 mots maximum"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Formule pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Utilisez cette structure: Role + contexte + tache + format + criteres de qualite. Exemple: Agis comme un formateur en bureautique. Je suis debutant. Explique-moi la fonction SOMME dans Excel avec un exemple simple, puis donne-moi un exercice."
+        },
+        {
+          "type": "heading",
+          "text": "Erreurs frequentes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Demander un resultat sans expliquer le contexte.",
+            "Oublier le format attendu.",
+            "Accepter la premiere reponse sans precision supplementaire.",
+            "Melanger plusieurs demandes contradictoires.",
+            "Donner des donnees personnelles inutiles."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Activite pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ecrivez un prompt pour demander une explication simple d'un chapitre que vous etudiez. Puis ameliorez-le en ajoutant le niveau, le format, un exemple attendu et une contrainte de longueur."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quel élément améliore fortement un prompt ?",
+          "choices": [
+            "Le contexte",
+            "Les fautes volontaires",
+            "L'absence d'objectif",
+            "Un seul mot vague"
+          ],
+          "answer": 0,
+          "explanation": "Le contexte aide l'IA à produire une réponse adaptée."
+        }
+      ]
+    },
+    {
+      "id": "ia-ch3",
+      "title": "Réviser et réutiliser les réponses",
+      "duration": "2 h",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Ameliorer par iterations"
+        },
+        {
+          "type": "paragraph",
+          "text": "Travailler avec l'IA se fait souvent en plusieurs etapes. La premiere reponse est un brouillon. Vous pouvez ensuite demander une version plus courte, plus claire, plus professionnelle, plus simple ou mieux adaptee a votre public."
+        },
+        {
+          "type": "paragraph",
+          "text": "L'iteration consiste a corriger progressivement. Vous lisez la reponse, vous identifiez ce qui manque, puis vous formulez une nouvelle demande precise. Cette methode donne de meilleurs resultats que recommencer a zero avec une demande vague."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Objectif du chapitre",
+          "text": "A la fin de cette lecon, vous devez savoir evaluer une reponse IA, demander une revision precise et reutiliser le resultat de maniere responsable."
+        },
+        {
+          "type": "heading",
+          "text": "Demandes de revision utiles"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Rends cette reponse plus courte.",
+            "Ajoute un exemple concret.",
+            "Explique avec un niveau debutant.",
+            "Transforme ce texte en plan.",
+            "Garde les idees mais rends le ton plus professionnel.",
+            "Signale les points qui doivent etre verifies."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Verifier avant reutilisation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Avant de copier une reponse, controlez les faits, adaptez le vocabulaire a votre situation et supprimez les elements qui ne vous correspondent pas. Une production IA doit devenir votre document final seulement apres relecture, correction et personnalisation."
+        },
+        {
+          "type": "heading",
+          "text": "Activite pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Demandez a l'IA de rediger un court mail professionnel. Ensuite, demandez trois revisions: une version plus courte, une version plus polie et une version plus directe. Comparez les trois resultats et choisissez les formulations les plus adaptees."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Une bonne façon d'améliorer une réponse IA est de...",
+          "choices": [
+            "Demander une nouvelle version avec des consignes précises",
+            "Fermer l'ordinateur",
+            "Ignorer le besoin initial",
+            "Supprimer tout contexte"
+          ],
+          "answer": 0,
+          "explanation": "Les consignes précises permettent d'améliorer progressivement la réponse."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "id": "MOD-INF01",
+  "slug": "initiation-informatique",
+  "title": "Initiation à l'informatique",
+  "subtitle": "Les bases pratiques pour travailler avec confiance.",
+  "description": "Ce module accompagne les apprenants dans la prise en main d'un ordinateur, la gestion des fichiers, la navigation web et les premiers réflexes de sécurité numérique.",
+  "level": "Débutant",
+  "duration": "6 h",
+  "cover": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+  "icon": "pc-display-horizontal",
+  "introduction": [
+    "Ce module est conçu pour les apprenants qui veulent devenir autonomes avec un ordinateur, même s'ils partent de zéro. Vous allez découvrir l'environnement de travail, comprendre le rôle des principaux éléments d'un poste informatique et apprendre à utiliser les actions de base sans stress: ouvrir une application, manipuler une fenêtre, saisir un texte, enregistrer un document et retrouver un fichier.",
+    "Le parcours avance étape par étape, comme dans une vraie formation professionnelle. Chaque notion est reliée à une situation concrète: préparer un dossier de formation, classer des documents administratifs, naviguer sur un site utile, reconnaître un lien suspect ou éviter de perdre un fichier important. L'objectif n'est pas seulement de connaître des mots techniques, mais de savoir quoi faire devant l'écran.",
+    "Ce module est important parce que la plupart des apprentissages numériques reposent sur ces fondations. Si vous maîtrisez le bureau, les dossiers, les fichiers et les règles de prudence sur Internet, vous pourrez suivre plus facilement les autres modules, travailler plus vite et demander de l'aide avec des mots plus précis.",
+    "À la fin du module, vous serez capable d'utiliser un ordinateur avec plus de confiance, d'organiser vos documents de façon logique, de naviguer sur Internet avec prudence et d'adopter de bons réflexes de sécurité numérique au quotidien."
+  ],
+  "learning": [
+    "Identifier les composants essentiels d'un ordinateur et leur utilité.",
+    "Utiliser le bureau, les fenêtres, le clavier, la souris et les applications courantes.",
+    "Créer, nommer, classer et retrouver des fichiers dans une organisation simple.",
+    "Naviguer sur Internet en vérifiant les sites, les liens et les informations sensibles.",
+    "Appliquer les premiers réflexes de sécurité numérique pour protéger ses données."
+  ],
+  "importance": "La maitrise des bases informatiques facilite l'acces aux cours, aux demarches administratives, aux outils professionnels et a la communication numerique.",
+  "objectives": [
+    "Identifier les composants essentiels d'un ordinateur.",
+    "Organiser correctement ses fichiers et dossiers.",
+    "Naviguer sur Internet en appliquant les règles de sécurité de base."
+  ],
+  "skills": [
+    "Autonomie numérique",
+    "Organisation documentaire",
+    "Navigation sécurisée"
+  ],
+  "prerequisites": [
+    "Savoir lire et écrire en français.",
+    "Aucun prérequis technique."
+  ],
+  "pdfSupports": [
+    {
+      "title": "Support - Initiation informatique",
+      "description": "Emplacement reserve au support PDF du module.",
+      "url": "",
+      "filename": "support-initiation-informatique.pdf",
+      "available": false
+    }
+  ],
+  "chapters": [
+    {
+      "id": "inf-ch1",
+      "title": "Découvrir l'environnement de travail",
+      "duration": "2 h",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Comprendre l'ordinateur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Un ordinateur est un poste de travail compose de plusieurs elements qui collaborent: l'ecran affiche les informations, le clavier permet de saisir du texte, la souris permet de pointer et selectionner, et l'unite centrale ou l'ordinateur portable execute les programmes. Pour devenir autonome, il faut comprendre le role de chaque element et savoir dans quel ordre agir."
+        },
+        {
+          "type": "paragraph",
+          "text": "Le systeme d'exploitation, comme Windows, macOS ou Linux, est le logiciel principal qui organise tout le reste. Il affiche le bureau, gere les fenetres, lance les applications, connecte les peripheriques et conserve les fichiers. Quand vous ouvrez un navigateur, un traitement de texte ou un dossier, vous utilisez toujours le systeme d'exploitation en arriere-plan."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Objectif du chapitre",
+          "text": "A la fin de cette lecon, vous devez pouvoir allumer un ordinateur, reconnaitre le bureau, ouvrir une application, manipuler une fenetre et expliquer simplement la difference entre materiel, logiciel et fichier."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "A retenir",
+          "text": "Le bureau est l'espace de depart. Les applications, fichiers et parametres s'organisent depuis cet espace."
+        },
+        {
+          "type": "heading",
+          "text": "Methode pas a pas"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Observer le bureau avant de cliquer: icones, barre des taches, menu demarrer et zone de notification.",
+            "Ouvrir une application depuis le menu demarrer ou une icone connue.",
+            "Agrandir, reduire, deplacer puis fermer une fenetre pour comprendre son fonctionnement.",
+            "Utiliser un clic simple pour selectionner, un double-clic pour ouvrir et le clic droit pour afficher des options.",
+            "Enregistrer un petit document test afin de comprendre qu'un travail doit etre sauvegarde avant de fermer l'application."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Exemple concret"
+        },
+        {
+          "type": "paragraph",
+          "text": "Imaginez que votre formateur vous demande de rediger une courte presentation. Vous devez ouvrir Word ou un editeur de texte, saisir trois phrases, enregistrer le fichier dans le dossier Documents, puis le retrouver plus tard. Cette sequence simple mobilise deja les bases: application, clavier, fenetre, fichier, dossier et sauvegarde."
+        },
+        {
+          "type": "heading",
+          "text": "Erreurs frequentes a eviter"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Fermer une application sans enregistrer le travail.",
+            "Confondre l'ecran avec l'ordinateur lui-meme.",
+            "Cliquer plusieurs fois trop vite quand l'ordinateur met du temps a reagir.",
+            "Enregistrer tous les fichiers sur le bureau sans classement.",
+            "Ignorer les messages importants du systeme sans les lire."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Activite pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Allumez l'ordinateur, ouvrez une application de texte, ecrivez votre nom et votre objectif de formation, enregistrez le fichier sous le nom exercice_bureau.txt, fermez l'application, puis retrouvez le fichier. Si vous pouvez refaire cette sequence sans aide, vous avez acquis la base operationnelle du chapitre."
+        },
+        {
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Poste informatique de travail",
+          "caption": "Un environnement propre facilite l'apprentissage."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quel élément permet principalement de saisir du texte ?",
+          "choices": [
+            "Le clavier",
+            "L'écran",
+            "La souris",
+            "Le câble HDMI"
+          ],
+          "answer": 0,
+          "explanation": "Le clavier sert à saisir du texte, des chiffres et des raccourcis."
+        },
+        {
+          "question": "Le bureau Windows sert surtout à...",
+          "choices": [
+            "Lancer des applications et accéder aux fichiers",
+            "Éteindre définitivement l'ordinateur",
+            "Remplacer Internet",
+            "Créer automatiquement des mots de passe"
+          ],
+          "answer": 0,
+          "explanation": "Le bureau centralise les raccourcis, fenêtres et accès rapides."
+        }
+      ]
+    },
+    {
+      "id": "inf-ch2",
+      "title": "Classer les fichiers et dossiers",
+      "duration": "2 h",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Creer une organisation simple"
+        },
+        {
+          "type": "paragraph",
+          "text": "Un bon classement evite les pertes de documents et permet de travailler plus vite. Dans un ordinateur, un fichier est un element precis, comme un CV, une photo ou une facture. Un dossier est un espace de rangement qui regroupe plusieurs fichiers. Comprendre cette difference est essentiel pour rester organise."
+        },
+        {
+          "type": "paragraph",
+          "text": "Le classement doit suivre une logique simple: un dossier principal pour la formation, puis des sous-dossiers par matiere ou par type de document. Le but n'est pas de creer beaucoup de dossiers, mais de retrouver rapidement ce que vous cherchez. Un bon nom de fichier doit indiquer le contenu, la personne concernee et parfois la date."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Objectif du chapitre",
+          "text": "A la fin de cette lecon, vous devez savoir creer un dossier, renommer un fichier, deplacer un document et choisir un nom clair pour un fichier professionnel."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Type",
+            "Exemple",
+            "Bon reflexe"
+          ],
+          "rows": [
+            [
+              "Document",
+              "CV_Bernisse.pdf",
+              "Nom precis"
+            ],
+            [
+              "Image",
+              "photo_profil.jpg",
+              "Dossier Images"
+            ],
+            [
+              "Cours",
+              "notes_informatique.docx",
+              "Dossier Formation"
+            ]
+          ]
+        },
+        {
+          "type": "info",
+          "variant": "alert",
+          "title": "Attention",
+          "text": "Evitez les noms comme document1 ou nouveau fichier. Ils deviennent vite impossibles a retrouver."
+        },
+        {
+          "type": "heading",
+          "text": "Methode de classement recommandee"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Creer un dossier Formation dans Documents.",
+            "Creer un sous-dossier pour chaque module: Informatique, Word_Excel, CV, IA.",
+            "Nommer les fichiers avec un format stable: type_nom_date.",
+            "Eviter les accents et les caracteres speciaux dans les fichiers destines a etre envoyes.",
+            "Supprimer ou archiver les doublons pour ne garder que la bonne version."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Exemple concret"
+        },
+        {
+          "type": "paragraph",
+          "text": "Si vous preparez une candidature, placez votre CV, votre lettre et vos attestations dans un dossier Candidature. Les fichiers peuvent s'appeler CV_Nom_Prenom_2026.pdf, Lettre_Entreprise_2026.docx et Attestation_Formation.pdf. Le recruteur comprend le contenu avant meme d'ouvrir les documents."
+        },
+        {
+          "type": "heading",
+          "text": "Activite pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Creez un dossier Formation, puis trois sous-dossiers: Cours, Exercices et Documents_personnels. Creez ensuite un fichier test dans Cours, renommez-le Notes_informatique.txt, deplacez-le dans Exercices, puis retrouvez-le avec la recherche de l'ordinateur."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quel nom de fichier est le plus professionnel ?",
+          "choices": [
+            "document_final_vrai2.docx",
+            "CV_Alice_BEYA_2026.pdf",
+            "nouveau.docx",
+            "aaaa.pdf"
+          ],
+          "answer": 1,
+          "explanation": "Un nom professionnel décrit clairement le contenu et le propriétaire."
+        }
+      ]
+    },
+    {
+      "id": "inf-ch3",
+      "title": "Internet et sécurité de base",
+      "duration": "2 h",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Naviguer avec prudence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Internet donne acces a des cours, services administratifs, offres d'emploi, outils de communication et ressources professionnelles. Cette puissance demande de la prudence: toutes les pages ne sont pas fiables, tous les liens ne sont pas securises et certaines demandes cherchent a voler des informations personnelles."
+        },
+        {
+          "type": "paragraph",
+          "text": "La navigation responsable repose sur trois reflexes: verifier l'adresse du site, proteger ses donnees personnelles et garder un esprit critique devant les messages urgents. Un site officiel utilise souvent une adresse claire, un cadenas HTTPS et une presentation coherente. Un message dangereux insiste souvent sur l'urgence, la peur ou une promesse trop belle."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Objectif du chapitre",
+          "text": "A la fin de cette lecon, vous devez pouvoir identifier une adresse web, reconnaitre un lien suspect, proteger un mot de passe et expliquer pourquoi il faut verifier une information avant de l'utiliser."
+        },
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "title": "Exemple de video integree"
+        },
+        {
+          "type": "heading",
+          "text": "Regles essentielles"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Verifier l'adresse du site.",
+            "Ne jamais partager son mot de passe.",
+            "Telecharger uniquement depuis des sources fiables.",
+            "Refuser les pieces jointes inattendues.",
+            "Utiliser un mot de passe different pour les comptes importants.",
+            "Se deconnecter apres utilisation sur un ordinateur partage."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Exemple concret"
+        },
+        {
+          "type": "paragraph",
+          "text": "Vous recevez un message qui dit que votre compte sera bloque dans une heure et vous demande de cliquer sur un lien. Avant de cliquer, observez l'adresse de l'expediteur, l'orthographe, le ton du message et l'adresse du lien. Si un doute existe, ouvrez vous-meme le site officiel depuis le navigateur au lieu d'utiliser le lien recu."
+        },
+        {
+          "type": "heading",
+          "text": "Activite pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Choisissez deux sites: un site officiel et un site inconnu. Comparez leur adresse, la presence du cadenas, la clarte des menus, les informations de contact et le ton utilise. Notez les signes qui vous inspirent confiance et ceux qui demandent prudence."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quel comportement est le plus sécurisé ?",
+          "choices": [
+            "Partager son mot de passe avec un ami",
+            "Cliquer sur tous les liens reçus",
+            "Vérifier l'adresse du site avant de saisir ses données",
+            "Installer n'importe quel fichier gratuit"
+          ],
+          "answer": 2,
+          "explanation": "Vérifier l'adresse limite les risques de fraude et de phishing."
+        }
+      ]
+    }
+  ]
+}

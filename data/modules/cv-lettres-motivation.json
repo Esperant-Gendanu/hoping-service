@@ -1,0 +1,209 @@
+{
+  "id": "MOD-PRO03",
+  "slug": "cv-lettres-motivation",
+  "title": "CV & lettres de motivation",
+  "subtitle": "Valoriser son profil professionnel.",
+  "description": "Ce module aide à construire un CV lisible et une lettre de motivation adaptée à une offre ou à une candidature spontanée.",
+  "level": "Tous niveaux",
+  "duration": "5 h",
+  "cover": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80",
+  "icon": "person-vcard",
+  "introduction": [
+    "Ce module vous accompagne dans la construction d'un dossier de candidature clair, crédible et adapté au poste visé. L'objectif est de transformer votre parcours, vos expériences, vos formations et vos qualités en informations faciles à comprendre pour un recruteur.",
+    "Vous allez apprendre à sélectionner les informations importantes, à organiser un CV professionnel, à formuler vos compétences avec précision et à éviter les erreurs qui donnent une impression de négligence. Vous verrez aussi comment rédiger une lettre de motivation qui ne répète pas simplement le CV, mais explique le lien entre vous, l'entreprise et le poste.",
+    "Ce module est important parce qu'un bon dossier de candidature peut ouvrir la porte à un entretien. Beaucoup de candidats ont des compétences réelles, mais ne savent pas les présenter clairement. Ici, vous apprenez à rendre votre profil lisible, convaincant et cohérent.",
+    "À la fin du module, vous serez capable de créer un CV structuré, d'adapter votre candidature à une offre, de mettre en valeur vos compétences clés et de rédiger une lettre courte, personnalisée et professionnelle."
+  ],
+  "learning": [
+    "Identifier les informations pertinentes de votre parcours.",
+    "Construire un CV clair, hiérarchisé et adapté au poste ciblé.",
+    "Formuler des compétences et expériences avec des mots professionnels.",
+    "Rédiger une lettre de motivation personnalisée et convaincante.",
+    "Préparer un dossier cohérent pour une offre, un stage ou une candidature spontanée."
+  ],
+  "importance": "Un dossier de candidature clair permet au recruteur de comprendre rapidement le profil, les competences et la motivation du candidat.",
+  "objectives": [
+    "Identifier ses compétences clés.",
+    "Structurer un CV professionnel.",
+    "Adapter une lettre au poste ciblé."
+  ],
+  "skills": [
+    "Communication écrite",
+    "Valorisation du parcours",
+    "Candidature professionnelle"
+  ],
+  "prerequisites": [
+    "Disposer d'informations sur son parcours.",
+    "Avoir une cible de métier ou de stage."
+  ],
+  "pdfSupports": [
+    {
+      "title": "Support - CV et lettres de motivation",
+      "description": "Emplacement reserve au support PDF du module.",
+      "url": "",
+      "filename": "support-cv-lettres-motivation.pdf",
+      "available": false
+    }
+  ],
+  "chapters": [
+    {
+      "id": "pro-ch1",
+      "title": "Construire un CV clair",
+      "duration": "2 h 30",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Le CV comme carte professionnelle"
+        },
+        {
+          "type": "paragraph",
+          "text": "Un CV efficace n'est pas une autobiographie. C'est une synthese professionnelle qui aide un recruteur a comprendre rapidement qui vous etes, ce que vous savez faire et pourquoi votre profil correspond au besoin. Chaque information doit avoir une utilite."
+        },
+        {
+          "type": "paragraph",
+          "text": "La lecture d'un CV est souvent tres rapide. Les informations les plus importantes doivent donc etre visibles: titre professionnel, coordonnees, competences, experiences, formations et outils maitrises. Un bon CV est clair, honnete, adapte et facile a lire."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Objectif du chapitre",
+          "text": "A la fin de cette lecon, vous devez pouvoir construire un CV structure, selectionner les informations utiles et adapter les competences au poste vise."
+        },
+        {
+          "type": "heading",
+          "text": "Structure recommandee"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Identite et contact professionnel.",
+            "Titre du CV adapte au poste.",
+            "Profil court en trois ou quatre lignes.",
+            "Competences principales liees au poste.",
+            "Experiences de la plus recente a la plus ancienne.",
+            "Formations, certificats et outils numeriques.",
+            "Langues, centres d'interet pertinents ou engagements utiles."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Formuler ses experiences"
+        },
+        {
+          "type": "paragraph",
+          "text": "Une experience doit montrer une action et, si possible, un resultat. Au lieu d'ecrire seulement Stage en boutique, ecrivez Accueil des clients, rangement des rayons et assistance a la vente pendant quatre semaines. Le recruteur voit mieux les competences mobilisees."
+        },
+        {
+          "type": "heading",
+          "text": "Erreurs frequentes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Mettre trop d'informations personnelles inutiles.",
+            "Utiliser une adresse e-mail non professionnelle.",
+            "Envoyer un CV sans titre.",
+            "Lister des competences sans lien avec le poste.",
+            "Melanger plusieurs polices ou tailles de texte.",
+            "Oublier de convertir le document en PDF avant l'envoi."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Activite pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Choisissez une offre d'emploi ou de stage. Surlignez trois competences demandees. Reprenez votre CV et placez ces competences dans le titre, le profil ou la section competences si elles correspondent vraiment a votre parcours."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Quel élément doit être adapté au poste visé ?",
+          "choices": [
+            "Les compétences mises en avant",
+            "La couleur de l'écran",
+            "Le nom du fichier système",
+            "Le navigateur utilisé"
+          ],
+          "answer": 0,
+          "explanation": "Les compétences doivent correspondre au besoin du recruteur."
+        }
+      ]
+    },
+    {
+      "id": "pro-ch2",
+      "title": "Rédiger une lettre motivante",
+      "duration": "2 h 30",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Argumenter sans reciter son CV"
+        },
+        {
+          "type": "paragraph",
+          "text": "La lettre de motivation complete le CV. Elle ne doit pas repeter toutes les experiences, mais expliquer le lien entre l'entreprise, le poste et votre profil. Une bonne lettre montre que vous avez compris le besoin et que votre candidature est reflechie."
+        },
+        {
+          "type": "paragraph",
+          "text": "Une lettre efficace est courte, precise et personnalisee. Elle commence par la raison de votre interet, developpe deux ou trois arguments solides, puis se termine par une ouverture vers un entretien. Le ton doit rester professionnel, direct et sincere."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Objectif du chapitre",
+          "text": "A la fin de cette lecon, vous devez savoir rediger une lettre personnalisee, relier vos competences au poste et eviter les formules trop generales."
+        },
+        {
+          "type": "info",
+          "variant": "note",
+          "title": "Methode",
+          "text": "Structure utile: vous, moi, nous. L'entreprise, votre profil, puis la collaboration possible."
+        },
+        {
+          "type": "heading",
+          "text": "Plan simple en quatre parties"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Objet: nom du poste ou type de candidature.",
+            "Introduction: pourquoi vous contactez cette structure.",
+            "Argument 1: competence ou experience directement utile.",
+            "Argument 2: motivation, qualite ou disponibilite.",
+            "Conclusion: proposition d'entretien et formule de politesse."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Exemple de raisonnement"
+        },
+        {
+          "type": "paragraph",
+          "text": "Si une offre demande de la rigueur et une bonne maitrise de Word, ne dites pas seulement Je suis motive. Expliquez que vous avez realise des documents structures, que vous savez respecter une mise en page et que vous comprenez l'importance d'un document propre dans un contexte professionnel."
+        },
+        {
+          "type": "heading",
+          "text": "Activite pratique"
+        },
+        {
+          "type": "paragraph",
+          "text": "Prenez une offre concrete. Relevez deux besoins de l'entreprise, puis ecrivez deux phrases qui relient chacun de ces besoins a une competence ou une experience personnelle. Ces phrases deviendront le coeur de votre lettre."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Une lettre de motivation doit être...",
+          "choices": [
+            "Générique",
+            "Personnalisée",
+            "Vide",
+            "Sans lien avec l'offre"
+          ],
+          "answer": 1,
+          "explanation": "La personnalisation montre que la candidature est sérieuse."
+        }
+      ]
+    }
+  ]
+}

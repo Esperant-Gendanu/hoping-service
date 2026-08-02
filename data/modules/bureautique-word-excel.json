@@ -1,0 +1,234 @@
+{
+  "id": "MOD-BUR02",
+  "slug": "bureautique-word-excel",
+  "title": "Bureautique Pro: Word & Excel",
+  "subtitle": "Maitriser Word et Excel pour produire des documents, tableaux et rapports professionnels.",
+  "description": "Un parcours complet en 8 chapitres: 4 chapitres Word et 4 chapitres Excel, avec methodes, exemples, activites pratiques et quiz.",
+  "level": "Debutant a intermediaire",
+  "duration": "24 h",
+  "cover": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80",
+  "icon": "file-earmark-spreadsheet",
+  "introduction": [
+    "Ce module est concu comme une vraie formation progressive. La premiere partie vous rend autonome sur Word: creation de documents, mise en page, styles, tableaux, images, correction, export PDF et documents longs. La deuxieme partie vous rend autonome sur Excel: saisie propre, formules, fonctions, tri, filtres, graphiques et synthese.",
+    "Chaque chapitre suit une logique de maitrise: comprendre la notion, observer un exemple, appliquer une methode pas a pas, eviter les erreurs frequentes, puis realiser une activite pratique. L'objectif est que l'apprenant soit capable de produire un vrai travail, pas seulement de reconnaitre les boutons.",
+    "A la fin du module, l'apprenant doit pouvoir creer un rapport Word complet et un classeur Excel exploitable, puis utiliser ces deux outils ensemble dans un contexte professionnel: candidature, suivi d'activite, gestion simple, rapport de formation ou presentation de resultats."
+  ],
+  "learning": [
+    "Creer, enregistrer, organiser et exporter des documents Word professionnels.",
+    "Utiliser les styles, titres, listes, marges, en-tetes, pieds de page et sommaires.",
+    "Inserer et maitriser tableaux, images, formes et elements visuels dans Word.",
+    "Construire des tableaux Excel propres, fiables et faciles a analyser.",
+    "Utiliser les formules et fonctions essentielles: SOMME, MOYENNE, MIN, MAX, SI, NB, NB.SI et SOMME.SI.",
+    "Trier, filtrer, mettre en forme, proteger et presenter les donnees.",
+    "Creer des graphiques et tableaux de synthese simples.",
+    "Realiser un mini-projet complet combinant Word et Excel."
+  ],
+  "importance": "La maitrise de Word et Excel permet de produire des documents serieux, suivre des activites, calculer correctement, analyser des donnees et communiquer des resultats dans presque tous les metiers.",
+  "objectives": [
+    "Produire un document Word complet, propre et exportable en PDF.",
+    "Construire un classeur Excel fiable avec formules, mise en forme et graphiques.",
+    "Realiser un rapport professionnel qui combine texte, tableau et analyse."
+  ],
+  "skills": [
+    "Redaction professionnelle",
+    "Mise en page avancee",
+    "Gestion de documents longs",
+    "Calcul automatise",
+    "Analyse de donnees",
+    "Presentation de resultats"
+  ],
+  "prerequisites": [
+    "Savoir utiliser le clavier, la souris et les dossiers.",
+    "Savoir ouvrir, enregistrer et retrouver un fichier.",
+    "Avoir suivi ou maitriser les bases informatiques."
+  ],
+  "pdfSupports": [
+    {
+      "title": "Support - Parcours complet Word et Excel",
+      "description": "Emplacement reserve au support PDF complet du module.",
+      "url": "",
+      "filename": "support-complet-word-excel.pdf",
+      "available": false
+    }
+  ],
+  "chapters": [
+    {
+      "id": "word-mod1",
+      "title": "Word - Module 1: prise en main et document propre",
+      "duration": "3 h",
+      "content": [
+        { "type": "heading", "text": "Objectif du module Word 1" },
+        { "type": "paragraph", "text": "Ce premier chapitre rend l'apprenant capable de creer un document Word simple mais propre. Il apprend a ouvrir Word, creer un nouveau document, saisir du texte, enregistrer correctement, retrouver son fichier, corriger les fautes visibles et exporter en PDF." },
+        { "type": "heading", "text": "Comprendre l'espace Word" },
+        { "type": "paragraph", "text": "Word est organise autour du ruban. Les onglets Accueil, Insertion, Mise en page, References, Revision et Affichage regroupent les commandes. L'apprenant ne doit pas memoriser tous les boutons; il doit comprendre ou chercher une commande selon son besoin: ecrire, inserer, presenter, corriger ou imprimer." },
+        { "type": "info", "variant": "note", "title": "Competence visee", "text": "A la fin, l'apprenant doit produire une page de presentation professionnelle avec un titre, trois paragraphes, une liste, une mise en forme sobre et un export PDF." },
+        { "type": "heading", "text": "Methode pas a pas" },
+        { "type": "list", "items": ["Ouvrir Word et choisir Document vierge.", "Saisir tout le texte avant de decorer.", "Enregistrer immediatement avec un nom clair dans le bon dossier.", "Utiliser Gras uniquement pour les mots importants, pas pour tout le texte.", "Aligner le texte a gauche pour garder une lecture naturelle.", "Utiliser les listes a puces pour les elements courts.", "Relire avec le correcteur orthographique.", "Exporter en PDF pour partager le document sans modifier la mise en page."] },
+        { "type": "heading", "text": "Exemple complet" },
+        { "type": "paragraph", "text": "Exercice: creer un document appele Presentation_Nom_Prenom.docx. Le document contient le titre Presentation professionnelle, un paragraphe sur le profil, une liste de 5 competences, puis un paragraphe sur l'objectif de formation. En fin de travail, enregistrer aussi une version PDF." },
+        { "type": "heading", "text": "Erreurs frequentes" },
+        { "type": "list", "items": ["Commencer la mise en forme avant d'avoir termine le contenu.", "Enregistrer le fichier avec un nom vague comme document1.", "Utiliser trop de couleurs ou trop de polices.", "Oublier de relire avant l'export PDF.", "Envoyer le fichier Word alors qu'un PDF est demande."] },
+        { "type": "heading", "text": "Activite de validation" },
+        { "type": "paragraph", "text": "L'apprenant doit remettre deux fichiers: le document Word modifiable et le PDF final. Le formateur verifie le nom du fichier, la lisibilite, l'orthographe, l'organisation du texte et la capacite a retrouver le document dans le dossier." }
+      ],
+      "quiz": [
+        { "question": "Pourquoi faut-il enregistrer le document des le debut ?", "choices": ["Pour eviter de perdre le travail", "Pour changer la couleur de Word", "Pour supprimer les fautes", "Pour fermer Internet"], "answer": 0, "explanation": "L'enregistrement des le debut limite le risque de perte et donne un emplacement clair au fichier." },
+        { "question": "Quel format est le plus adapte pour partager un document final non modifiable ?", "choices": ["PDF", "DOCX brouillon", "TXT sans mise en page", "ZIP obligatoire"], "answer": 0, "explanation": "Le PDF conserve mieux la mise en page et convient au partage final." }
+      ]
+    },
+    {
+      "id": "word-mod2",
+      "title": "Word - Module 2: mise en page, styles et structure",
+      "duration": "3 h",
+      "content": [
+        { "type": "heading", "text": "Objectif du module Word 2" },
+        { "type": "paragraph", "text": "Ce chapitre apprend a transformer un texte brut en document professionnel structure. L'apprenant maitrise les marges, l'orientation, les espacements, les interlignes, les styles de titres, les listes numerotees et la coherence visuelle." },
+        { "type": "heading", "text": "Pourquoi les styles sont importants" },
+        { "type": "paragraph", "text": "Un style est un ensemble de regles appliquees a un texte: police, taille, couleur, espacement et niveau de titre. Utiliser les styles evite de modifier chaque titre a la main. Cela permet aussi de creer un sommaire automatique dans les documents longs." },
+        { "type": "table", "headers": ["Element", "Utilisation", "Bon reflexe"], "rows": [["Titre 1", "Grandes parties", "Un seul niveau principal par section"], ["Titre 2", "Sous-parties", "Pour organiser les details"], ["Normal", "Paragraphes", "Texte simple et lisible"], ["Liste numerotee", "Etapes", "Quand l'ordre compte"], ["Puces", "Elements courts", "Quand l'ordre ne compte pas"]] },
+        { "type": "heading", "text": "Methode pas a pas" },
+        { "type": "list", "items": ["Definir les marges avant la presentation finale.", "Choisir une police simple et professionnelle.", "Appliquer Titre 1 aux grandes parties.", "Appliquer Titre 2 aux sous-parties.", "Regler l'espacement avant et apres les paragraphes.", "Utiliser les listes uniquement quand elles ameliorent la lecture.", "Verifier la coherence sur toutes les pages avec l'apercu avant impression."] },
+        { "type": "info", "variant": "alert", "title": "Erreur critique", "text": "Ne fabriquez pas les titres uniquement avec Gras + Grande taille. Utilisez les styles pour garder un document propre et evolutif." },
+        { "type": "heading", "text": "Exercice guide" },
+        { "type": "paragraph", "text": "Creer un rapport de deux pages: Introduction, Objectifs, Activites realisees, Difficultes, Conclusion. Chaque grande partie utilise Titre 1. Les sous-points utilisent Titre 2. Les activites sont presentees avec une liste numerotee." },
+        { "type": "heading", "text": "Validation pratique" },
+        { "type": "paragraph", "text": "Le document doit rester lisible meme si on change la police generale. Cela prouve que la structure repose sur les styles et non sur des bricolages manuels." }
+      ],
+      "quiz": [
+        { "question": "Quel outil permet de garder une structure coherente dans Word ?", "choices": ["Les styles", "Le zoom", "La corbeille", "Le Bluetooth"], "answer": 0, "explanation": "Les styles appliquent une structure coherente aux titres et paragraphes." },
+        { "question": "Quand utiliser une liste numerotee ?", "choices": ["Quand l'ordre des etapes compte", "Pour tous les paragraphes", "Pour remplacer les titres", "Uniquement pour les images"], "answer": 0, "explanation": "Une liste numerotee indique une progression ou un ordre d'action." }
+      ]
+    },
+    {
+      "id": "word-mod3",
+      "title": "Word - Module 3: tableaux, images et documents visuels",
+      "duration": "3 h",
+      "content": [
+        { "type": "heading", "text": "Objectif du module Word 3" },
+        { "type": "paragraph", "text": "Ce chapitre apprend a enrichir un document avec des tableaux, images, formes et zones de texte sans perdre la lisibilite. L'objectif est de produire un document professionnel qui combine texte et elements visuels." },
+        { "type": "heading", "text": "Tableaux dans Word" },
+        { "type": "paragraph", "text": "Un tableau Word sert a organiser des informations textuelles ou simples: planning, liste de presence, comparaison, budget tres simple. Pour les calculs complexes, Excel reste plus adapte. Dans Word, le tableau doit rester lisible, bien aligne et avec des titres de colonnes clairs." },
+        { "type": "heading", "text": "Images et habillage" },
+        { "type": "paragraph", "text": "Inserer une image ne suffit pas. Il faut choisir l'habillage du texte, redimensionner sans deformer, placer l'image pres du contenu concerne et ajouter une legende si elle apporte une information. Une image trop grande ou mal placee rend le document amateur." },
+        { "type": "table", "headers": ["Besoin", "Outil Word", "Conseil"], "rows": [["Comparer", "Tableau", "Limiter le nombre de colonnes"], ["Illustrer", "Image", "Utiliser une image nette"], ["Expliquer", "Forme ou fleche", "Rester sobre"], ["Identifier", "Legende", "Decrire l'image en une phrase"]] },
+        { "type": "heading", "text": "Methode pas a pas" },
+        { "type": "list", "items": ["Inserer un tableau avec le bon nombre de colonnes.", "Nommer les en-tetes de colonnes.", "Aligner les textes et ajuster la largeur.", "Inserer une image utile au contenu.", "Choisir un habillage adapte: aligne sur le texte pour commencer.", "Ajouter une legende courte si necessaire.", "Verifier que le document reste lisible en PDF."] },
+        { "type": "heading", "text": "Activite pratique" },
+        { "type": "paragraph", "text": "Creer une fiche de formation avec un tableau Programme, une image illustrative, une legende et une zone Contact. Le document doit tenir sur une page et rester propre apres export PDF." }
+      ],
+      "quiz": [
+        { "question": "Dans Word, a quoi sert principalement un tableau ?", "choices": ["Organiser des informations", "Remplacer tous les paragraphes", "Naviguer sur Internet", "Effacer les images"], "answer": 0, "explanation": "Un tableau organise des informations en lignes et colonnes." },
+        { "question": "Quel reflexe evite de deformer une image ?", "choices": ["Redimensionner depuis un coin", "Tirer seulement en largeur", "Changer le texte en rouge", "Supprimer la legende"], "answer": 0, "explanation": "Redimensionner depuis un coin conserve mieux les proportions." }
+      ]
+    },
+    {
+      "id": "word-mod4",
+      "title": "Word - Module 4: documents longs, revision et projet final",
+      "duration": "3 h",
+      "content": [
+        { "type": "heading", "text": "Objectif du module Word 4" },
+        { "type": "paragraph", "text": "Ce chapitre amene l'apprenant vers une vraie autonomie professionnelle: document long, page de garde, sommaire automatique, en-tetes, pieds de page, numerotation, verification, commentaires, export final et preparation a l'impression." },
+        { "type": "heading", "text": "Documents longs" },
+        { "type": "paragraph", "text": "Un document long doit etre navigable. Les titres structures permettent de generer un sommaire automatique. Les en-tetes et pieds de page facilitent l'identification du document. La numerotation permet au lecteur de citer une page precise." },
+        { "type": "heading", "text": "Revision professionnelle" },
+        { "type": "paragraph", "text": "La revision ne se limite pas aux fautes. Il faut verifier le fond, la coherence, les repetitions, la presentation, les dates, les noms, les titres, les espaces et les sauts de page. Word propose des commentaires et le suivi des modifications pour collaborer." },
+        { "type": "heading", "text": "Methode de finalisation" },
+        { "type": "list", "items": ["Verifier les titres et niveaux de styles.", "Inserer ou mettre a jour le sommaire.", "Ajouter une page de garde sobre.", "Verifier les en-tetes, pieds de page et numeros.", "Relire avec le correcteur puis relire manuellement.", "Controler l'apercu avant impression.", "Exporter en PDF et ouvrir le PDF pour verifier le resultat."] },
+        { "type": "info", "variant": "note", "title": "Projet final Word", "text": "Produire un rapport de 4 a 6 pages sur un theme de formation: page de garde, sommaire, introduction, deux parties, tableau, image, conclusion et PDF final." },
+        { "type": "heading", "text": "Criteres de maitrise" },
+        { "type": "list", "items": ["Le document a une structure visible.", "Le sommaire correspond aux titres.", "La numerotation est correcte.", "Les tableaux et images ne cassent pas la mise en page.", "Le PDF final est propre et partageable."] }
+      ],
+      "quiz": [
+        { "question": "Quelle condition permet de creer un sommaire automatique fiable ?", "choices": ["Utiliser les styles de titre", "Ecrire tout en majuscules", "Mettre le texte en rouge", "Supprimer les pages"], "answer": 0, "explanation": "Le sommaire automatique s'appuie sur les styles de titre." },
+        { "question": "Pourquoi ouvrir le PDF apres export ?", "choices": ["Pour verifier le resultat final", "Pour effacer Word", "Pour changer le clavier", "Pour ajouter Internet"], "answer": 0, "explanation": "Il faut toujours verifier que le PDF final conserve la bonne mise en page." }
+      ]
+    },
+    {
+      "id": "excel-mod1",
+      "title": "Excel - Module 1: classeur, cellules et donnees propres",
+      "duration": "3 h",
+      "content": [
+        { "type": "heading", "text": "Objectif du module Excel 1" },
+        { "type": "paragraph", "text": "Ce chapitre pose les bases indispensables d'Excel. L'apprenant comprend la difference entre classeur, feuille, ligne, colonne, cellule et plage. Il apprend a saisir des donnees propres, enregistrer un classeur, ajuster les colonnes et preparer un tableau fiable." },
+        { "type": "heading", "text": "La logique d'Excel" },
+        { "type": "paragraph", "text": "Excel fonctionne comme une grille. Chaque cellule a une adresse, par exemple B3. Une plage est un groupe de cellules, par exemple B2:B10. Les calculs utilisent ces adresses. Si les donnees sont mal placees, les calculs deviennent difficiles ou faux." },
+        { "type": "info", "variant": "note", "title": "Regle d'or", "text": "Une ligne = un enregistrement. Une colonne = une information. Une cellule = une seule valeur." },
+        { "type": "table", "headers": ["Mauvaise pratique", "Bonne pratique"], "rows": [["Nom et telephone dans la meme cellule", "Nom dans une colonne, telephone dans une autre"], ["Plusieurs titres au milieu du tableau", "Une seule ligne d'en-tetes"], ["Cellules fusionnees dans les donnees", "Colonnes simples et regulieres"], ["Montants avec texte melange", "Montants numeriques dans une colonne dediee"]] },
+        { "type": "heading", "text": "Methode pas a pas" },
+        { "type": "list", "items": ["Nommer la feuille clairement.", "Creer une ligne d'en-tetes.", "Saisir une seule information par cellule.", "Ajuster la largeur des colonnes.", "Appliquer un format nombre, date ou texte selon le besoin.", "Transformer la plage en tableau si les donnees doivent etre filtrees.", "Enregistrer avec un nom clair."] },
+        { "type": "heading", "text": "Activite pratique" },
+        { "type": "paragraph", "text": "Creer un classeur Suivi_Depenses.xlsx avec les colonnes Date, Categorie, Description, Montant, Mode de paiement. Saisir au moins 10 lignes propres. Aucun calcul n'est encore demande: l'objectif est la qualite des donnees." }
+      ],
+      "quiz": [
+        { "question": "Dans Excel, que represente B3 ?", "choices": ["L'adresse d'une cellule", "Le nom du fichier", "Une imprimante", "Une police"], "answer": 0, "explanation": "B3 designe la cellule situee colonne B, ligne 3." },
+        { "question": "Quelle est la meilleure structure de tableau ?", "choices": ["Une ligne par enregistrement", "Plusieurs informations melangees", "Des cellules fusionnees partout", "Un titre toutes les deux lignes"], "answer": 0, "explanation": "Une ligne par enregistrement facilite les calculs, tris et filtres." }
+      ]
+    },
+    {
+      "id": "excel-mod2",
+      "title": "Excel - Module 2: formules et fonctions essentielles",
+      "duration": "3 h",
+      "content": [
+        { "type": "heading", "text": "Objectif du module Excel 2" },
+        { "type": "paragraph", "text": "Ce chapitre rend l'apprenant capable d'automatiser les calculs. Il apprend la difference entre valeur, formule et fonction, utilise les references de cellules et maitrise les fonctions essentielles pour un suivi simple." },
+        { "type": "heading", "text": "Formules et references" },
+        { "type": "paragraph", "text": "Une formule commence par le signe egal. Elle peut utiliser des nombres, des operateurs et des references de cellules. Par exemple, =B2+C2 additionne le contenu des cellules B2 et C2. Si les valeurs changent, le resultat se met a jour automatiquement." },
+        { "type": "table", "headers": ["Fonction", "Role", "Exemple"], "rows": [["SOMME", "Additionner", "=SOMME(D2:D20)"], ["MOYENNE", "Calculer une moyenne", "=MOYENNE(D2:D20)"], ["MIN", "Trouver le minimum", "=MIN(D2:D20)"], ["MAX", "Trouver le maximum", "=MAX(D2:D20)"], ["NB", "Compter les nombres", "=NB(D2:D20)"], ["SI", "Tester une condition", "=SI(D2>100;\"Eleve\";\"Normal\")"]] },
+        { "type": "heading", "text": "Methode pas a pas" },
+        { "type": "list", "items": ["Cliquer dans la cellule du resultat.", "Taper le signe egal.", "Choisir la fonction ou les cellules.", "Verifier la plage selectionnee.", "Valider avec Entree.", "Recopier la formule si elle doit s'appliquer a plusieurs lignes.", "Verifier un resultat manuellement pour detecter les erreurs."] },
+        { "type": "info", "variant": "alert", "title": "Erreur frequente", "text": "Ne tapez pas les resultats a la main quand Excel peut les calculer. Sinon le tableau ne se mettra pas a jour." },
+        { "type": "heading", "text": "Activite pratique" },
+        { "type": "paragraph", "text": "Dans le classeur Suivi_Depenses.xlsx, calculer le total des depenses, la moyenne, la plus grande depense, la plus petite depense et une colonne Statut qui affiche Eleve si le montant depasse 100." }
+      ],
+      "quiz": [
+        { "question": "Quel caractere demarre une formule Excel ?", "choices": ["=", "+ dans tous les cas", "#", "@"], "answer": 0, "explanation": "Une formule Excel commence par le signe egal." },
+        { "question": "Quelle fonction permet de tester une condition ?", "choices": ["SI", "SOMME", "MAX", "MIN"], "answer": 0, "explanation": "La fonction SI renvoie un resultat selon une condition." }
+      ]
+    },
+    {
+      "id": "excel-mod3",
+      "title": "Excel - Module 3: tri, filtres, mise en forme et controle",
+      "duration": "3 h",
+      "content": [
+        { "type": "heading", "text": "Objectif du module Excel 3" },
+        { "type": "paragraph", "text": "Ce chapitre apprend a exploiter un tableau: trier, filtrer, rechercher, mettre en forme et controler les donnees. L'apprenant ne se contente plus de saisir; il sait retrouver une information et rendre le tableau lisible." },
+        { "type": "heading", "text": "Tri et filtre" },
+        { "type": "paragraph", "text": "Le tri change l'ordre des lignes selon un critere: date, nom, montant, categorie. Le filtre masque temporairement les lignes qui ne correspondent pas au critere choisi. Ces outils permettent d'analyser rapidement une grande liste." },
+        { "type": "heading", "text": "Mise en forme utile" },
+        { "type": "paragraph", "text": "La mise en forme doit aider a comprendre. Les en-tetes peuvent etre en gras, les montants alignes, les dates uniformes et les totaux mis en evidence. La mise en forme conditionnelle permet de signaler automatiquement des valeurs elevees ou faibles." },
+        { "type": "table", "headers": ["Besoin", "Outil"], "rows": [["Voir les plus grandes depenses", "Tri decroissant sur Montant"], ["Afficher seulement Transport", "Filtre sur Categorie"], ["Reperer les depenses elevees", "Mise en forme conditionnelle"], ["Eviter les doublons", "Verification visuelle ou suppression des doublons"]] },
+        { "type": "heading", "text": "Methode pas a pas" },
+        { "type": "list", "items": ["Selectionner le tableau complet.", "Activer les filtres.", "Tester un filtre par categorie.", "Trier les montants du plus grand au plus petit.", "Appliquer une mise en forme conditionnelle aux montants eleves.", "Verifier que les lignes restent completes apres le tri.", "Retirer les filtres avant de partager le fichier si necessaire."] },
+        { "type": "heading", "text": "Activite pratique" },
+        { "type": "paragraph", "text": "Dans le suivi des depenses, filtrer une categorie, trier les montants, colorer automatiquement les depenses superieures a 100, puis ecrire une phrase d'observation sur la categorie la plus couteuse." }
+      ],
+      "quiz": [
+        { "question": "Quelle est la difference entre tri et filtre ?", "choices": ["Le tri change l'ordre, le filtre affiche seulement certaines lignes", "Le filtre supprime toujours les lignes", "Le tri change la police", "Ils sont identiques"], "answer": 0, "explanation": "Le tri ordonne les donnees; le filtre masque temporairement les donnees non selectionnees." },
+        { "question": "A quoi sert la mise en forme conditionnelle ?", "choices": ["Mettre en evidence automatiquement certaines valeurs", "Fermer le classeur", "Changer le nom du fichier", "Supprimer les formules"], "answer": 0, "explanation": "Elle applique une presentation selon des conditions definies." }
+      ]
+    },
+    {
+      "id": "excel-mod4",
+      "title": "Excel - Module 4: graphiques, synthese et projet final",
+      "duration": "3 h",
+      "content": [
+        { "type": "heading", "text": "Objectif du module Excel 4" },
+        { "type": "paragraph", "text": "Ce chapitre final apprend a presenter les resultats. L'apprenant cree des graphiques, construit une synthese, choisit les indicateurs utiles et prepare un classeur propre a transmettre." },
+        { "type": "heading", "text": "Choisir le bon graphique" },
+        { "type": "paragraph", "text": "Un graphique doit repondre a une question. Pour comparer des categories, utilisez un histogramme. Pour suivre une evolution dans le temps, utilisez une courbe. Pour montrer une repartition simple, utilisez un secteur, mais seulement si le nombre de categories est limite." },
+        { "type": "table", "headers": ["Question", "Graphique adapte"], "rows": [["Quelle categorie coute le plus ?", "Histogramme"], ["Comment les ventes evoluent-elles ?", "Courbe"], ["Quelle part pour chaque categorie ?", "Secteur"], ["Quels sont les chiffres exacts ?", "Tableau de synthese"]] },
+        { "type": "heading", "text": "Construire une synthese" },
+        { "type": "paragraph", "text": "Une synthese ne montre pas toutes les donnees. Elle selectionne les informations importantes: total, moyenne, maximum, minimum, categorie dominante, evolution et conclusion. Elle doit aider une personne a prendre une decision rapidement." },
+        { "type": "heading", "text": "Projet final Excel" },
+        { "type": "paragraph", "text": "L'apprenant cree un classeur complet de suivi d'activite: une feuille Donnees, une feuille Calculs et une feuille Synthese. Le classeur contient au moins 20 lignes, des formules, des filtres, une mise en forme conditionnelle, deux graphiques et une conclusion courte." },
+        { "type": "heading", "text": "Criteres de maitrise" },
+        { "type": "list", "items": ["Les donnees sont propres et regulieres.", "Les formules utilisent les bonnes plages.", "Les filtres et tris fonctionnent.", "Les graphiques ont un titre clair.", "La synthese presente les informations essentielles.", "Le fichier est nomme clairement et partageable."] },
+        { "type": "image", "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80", "alt": "Tableau de bord analytique", "caption": "Un bon graphique transforme les donnees en decision." }
+      ],
+      "quiz": [
+        { "question": "Quel graphique convient pour comparer des categories ?", "choices": ["Histogramme", "Courbe uniquement", "Image", "Zone de texte"], "answer": 0, "explanation": "L'histogramme compare facilement plusieurs categories." },
+        { "question": "Que doit contenir une bonne synthese ?", "choices": ["Les indicateurs essentiels et une conclusion", "Toutes les cellules sans tri", "Seulement des couleurs", "Aucune formule"], "answer": 0, "explanation": "Une synthese selectionne les informations importantes et aide a comprendre." }
+      ]
+    }
+  ]
+}
