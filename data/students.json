@@ -1,22 +1,38 @@
 [
   {
-    "id": "ALBY-001-2026",
+    "id": "TS-AB2026",
     "nom": "BEYA",
     "prenom": "Alice",
-    "promotion": "Word-1",
-    "modules": [
-      "MOD-BUR02"
-    ]
-  },
-  {
-    "id": "132001",
-    "nom": "Kikandu",
-    "prenom": "Bernisse",
-    "promotion": "Excel-1",
+    "promotion": "BUREAUTIQUE-1",
     "modules": [
       "MOD-INF01",
       "MOD-BUR02",
-      "MOD-PRO03"
+      "MOD-PRO03",
+      "MOD-IA04"
+    ]
+  },
+  {
+    "id": "TS-BK2026",
+    "nom": "Kikandu",
+    "prenom": "Bernisse",
+    "promotion": "BUREAUTIQUE-1",
+    "modules": [
+      "MOD-INF01",
+      "MOD-BUR02",
+      "MOD-PRO03",
+      "MOD-IA04"
+    ]
+  },
+  {
+    "id": "TS-CL2026",
+    "nom": "LILOKU",
+    "prenom": "CHRIST",
+    "promotion": "BUREAUTIQUE-1",
+    "modules": [
+      "MOD-INF01",
+      "MOD-BUR02",
+      "MOD-PRO03",
+      "MOD-IA04"
     ]
   }
 ]
