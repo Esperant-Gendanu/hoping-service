@@ -46,5 +46,17 @@
       "MOD-PRO03",
       "MOD-IA04"
     ]
+  },
+   {
+    "id": "TS-AY2026",
+    "nom": "LUPUNGU",
+    "prenom": "Renatte",
+    "promotion": "BUREAUTIQUE-1",
+    "modules": [
+      "MOD-INF01",
+      "MOD-BUR02",
+      "MOD-PRO03",
+      "MOD-IA04"
+    ]
   }
 ]
