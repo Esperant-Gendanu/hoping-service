@@ -1,5 +1,6 @@
 const MODULES_INDEX_URL = "data/modules.json";
 const MODULE_URL = (slug) => `data/modules/${slug}.json`;
+const STUDENTS_URL = "data/students.json";
 
 export async function loadModuleIndex() {
     const response = await fetch(MODULES_INDEX_URL, { cache: "no-store" });
@@ -25,6 +26,27 @@ export function getCurrentUser() {
     } catch (error) {
         return null;
     }
+}
+
+export async function getVerifiedCurrentUser() {
+    const currentUser = getCurrentUser();
+    if (!currentUser?.id) return null;
+
+    const response = await fetch(STUDENTS_URL, { cache: "no-store" });
+    if (!response.ok) throw new Error("Impossible de verifier votre inscription.");
+
+    const students = await response.json();
+    const verifiedUser = Array.isArray(students)
+        ? students.find((student) => student.id === currentUser.id)
+        : null;
+
+    if (!verifiedUser) {
+        localStorage.removeItem("currentUser");
+        return null;
+    }
+
+    localStorage.setItem("currentUser", JSON.stringify(verifiedUser));
+    return verifiedUser;
 }
 
 export function canAccessModule(user, moduleId) {

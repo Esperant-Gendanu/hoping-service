@@ -1,4 +1,4 @@
-import { canAccessModule, getCurrentUser, loadModule } from "../services/lms-api.js";
+import { canAccessModule, getVerifiedCurrentUser, loadModule } from "../services/lms-api.js";
 import { applyStoredTheme, getCurrentUserId, getModulePercent, getProgress, markChapterCompleted, saveProgress } from "../services/progress-store.js";
 import { mountQuiz } from "../components/quiz.js";
 import { icon, progressBar, renderContentBlock } from "../components/ui.js";
@@ -8,11 +8,14 @@ applyStoredTheme();
 const params = new URLSearchParams(window.location.search);
 const slug = params.get("slug");
 let chapterIndex = Number(params.get("chapter") || 0);
-const user = getCurrentUser();
+let user = null;
 const root = document.querySelector("#courseReader");
 
 async function initReader() {
     if (!slug) throw new Error("Module introuvable.");
+    user = await getVerifiedCurrentUser();
+    if (!user) throw new Error("Session invalide. Veuillez vous reconnecter.");
+
     const module = await loadModule(slug);
     if (!canAccessModule(user, module.id)) throw new Error("Vous n'êtes pas inscrit à ce module.");
 

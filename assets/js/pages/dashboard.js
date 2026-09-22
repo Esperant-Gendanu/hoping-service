@@ -1,10 +1,10 @@
-import { canAccessModule, getCurrentUser, loadModule, loadModuleIndex } from "../services/lms-api.js";
+import { canAccessModule, getVerifiedCurrentUser, loadModule, loadModuleIndex } from "../services/lms-api.js";
 import { applyStoredTheme, getAllProgress, getModulePercent, getProgress, setTheme, getTheme } from "../services/progress-store.js";
 import { formatDate, icon, moduleCard, progressBar } from "../components/ui.js";
 
 applyStoredTheme();
 
-const user = getCurrentUser();
+let user = null;
 const elements = {
     welcome: document.querySelector("#welcomeUser"),
     matricule: document.querySelector("#matriculeUser"),
@@ -15,11 +15,6 @@ const elements = {
     themeToggle: document.querySelector("#themeToggle"),
 };
 
-if (user) {
-    elements.welcome.textContent = `${user.prenom} ${user.nom}`;
-    elements.matricule.textContent = `ID : ${user.id} | ${user.promotion}`;
-}
-
 elements.themeToggle?.addEventListener("click", () => {
     const nextTheme = getTheme() === "dark" ? "light" : "dark";
     setTheme(nextTheme);
@@ -27,6 +22,15 @@ elements.themeToggle?.addEventListener("click", () => {
 });
 
 async function initDashboard() {
+    user = await getVerifiedCurrentUser();
+    if (!user) {
+        window.location.href = "index.html";
+        return;
+    }
+
+    elements.welcome.textContent = `${user.prenom} ${user.nom}`;
+    elements.matricule.textContent = `ID : ${user.id} | ${user.promotion}`;
+
     const indexModules = await loadModuleIndex();
     const modules = await Promise.all(indexModules.map((module) => loadModule(module.slug)));
     const accessibleModules = modules.filter((module) => canAccessModule(user, module.id));

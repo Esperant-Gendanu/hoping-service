@@ -1,4 +1,4 @@
-import { canAccessModule, getCurrentUser, loadModule } from "../services/lms-api.js";
+import { canAccessModule, getVerifiedCurrentUser, loadModule } from "../services/lms-api.js";
 import { applyStoredTheme, getCurrentUserId, getModulePercent, getProgress } from "../services/progress-store.js";
 import { formatDate, icon, progressBar } from "../components/ui.js";
 
@@ -6,11 +6,14 @@ applyStoredTheme();
 
 const params = new URLSearchParams(window.location.search);
 const slug = params.get("slug");
-const user = getCurrentUser();
+let user = null;
 const root = document.querySelector("#moduleDetail");
 
 async function initModuleDetail() {
     if (!slug) throw new Error("Module introuvable.");
+    user = await getVerifiedCurrentUser();
+    if (!user) throw new Error("Session invalide. Veuillez vous reconnecter.");
+
     const module = await loadModule(slug);
     const progress = getProgress(module.slug);
     const percent = getModulePercent(module, progress);

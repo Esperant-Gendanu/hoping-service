@@ -1,23 +1,11 @@
-const LOCAL_STUDENTS_KEY = "hopingStudentsData";
-
 async function loadStudents() {
-    const localStudents = localStorage.getItem(LOCAL_STUDENTS_KEY);
-
-    if (localStudents) {
-        try {
-            const parsedStudents = JSON.parse(localStudents);
-            if (Array.isArray(parsedStudents)) {
-                return parsedStudents;
-            }
-        } catch (error) {
-            localStorage.removeItem(LOCAL_STUDENTS_KEY);
-        }
-    }
-
     const response = await fetch("data/students.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("Impossible de charger les données.");
+    if (!response.ok) throw new Error("Impossible de charger les donnees.");
 
-    return response.json();
+    const students = await response.json();
+    if (!Array.isArray(students)) throw new Error("Format students.json invalide.");
+
+    return students;
 }
 
 document.getElementById("loginForm").addEventListener("submit", async function(e) {
@@ -35,11 +23,12 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
             localStorage.setItem("currentUser", JSON.stringify(student));
             window.location.href = "dashboard.html";
         } else {
-            errorDiv.textContent = "Identifiant incorrect. Veuillez vérifier auprès de votre formateur.";
+            localStorage.removeItem("currentUser");
+            errorDiv.textContent = "Identifiant incorrect. Veuillez verifier aupres de votre formateur.";
             errorDiv.classList.remove("d-none");
         }
     } catch (err) {
-        errorDiv.textContent = "Erreur technique lors de la vérification.";
+        errorDiv.textContent = "Erreur technique lors de la verification.";
         errorDiv.classList.remove("d-none");
     }
 });

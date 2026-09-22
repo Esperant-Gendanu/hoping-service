@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hoping_Service, plateforme de formation professionnelle en informatique, bureautique, analyse de données et développement web.">
-    <title>Hoping_Service | Plateforme de formation</title>
+    <meta name="description" content="Hoping_Service, plateforme de formation professionnelle avec modules, progression et quiz interactifs.">
+    <title>Hoping_Service | Formation professionnelle</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="home-page premium-home">
-    <nav class="navbar navbar-expand-lg fixed-top premium-navbar">
+<body class="home-page modern-home">
+    <nav class="navbar navbar-expand-lg fixed-top modern-home-nav">
         <div class="container">
             <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
                 <span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span>
@@ -21,161 +21,84 @@
             </button>
             <div class="collapse navbar-collapse" id="homeNavbar">
                 <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link d-inline-flex align-items-center gap-2" href="#accueil">
-                            <i class="bi bi-house-door"></i> Accueil
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-inline-flex align-items-center gap-2" href="#fonctionnalites">
-                            <i class="bi bi-grid-1x2"></i> Fonctionnalités
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-inline-flex align-items-center gap-2" href="#connexion">
-                            <i class="bi bi-fingerprint"></i> Connexion
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#connexion">Connexion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#modules">Modules</a></li>
                 </ul>
                 <div class="d-flex flex-column flex-sm-row gap-2">
-                    <a href="a-propos.html" class="btn btn-ghost-light btn-sm">
-                        <i class="bi bi-person-badge me-1"></i> À propos
-                    </a>
-                    <a href="admin.html" class="btn btn-glow btn-sm">
-                        <i class="bi bi-shield-lock me-1"></i> Admin
-                    </a>
+                    <a href="a-propos.html" class="btn btn-ghost-light btn-sm"><i class="bi bi-person-badge me-1"></i> A propos</a>
+                    <a href="admin.html" class="btn btn-glow btn-sm"><i class="bi bi-shield-lock me-1"></i> Admin</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main id="accueil" class="premium-shell">
-        <section class="premium-hero">
+    <main id="accueil" class="modern-home-shell">
+        <section class="modern-hero">
             <div class="container">
-                <div class="row align-items-center g-4 g-xl-5">
-                    <div class="col-lg-7">
-                        <span class="premium-kicker mb-3">
-                            <i class="bi bi-stars"></i> Plateforme intelligente de formation
-                        </span>
-                        <h1 class="premium-title fw-bold mb-4">
-                            Apprendre plus vite avec une interface claire, moderne et immersive.
-                        </h1>
-                        <p class="premium-lead mb-4">
-                            Hoping_Service regroupe les cours, supports et modules personnalisés dans un portail élégant, sécurisé et pensé pour une expérience fluide sur ordinateur comme sur smartphone.
-                        </p>
-                        <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
-                            <a href="#connexion" class="btn btn-glow btn-lg">
-                                <i class="bi bi-box-arrow-in-right me-2"></i> Accéder à mon espace
-                            </a>
-                            <a href="#fonctionnalites" class="btn btn-ghost-light btn-lg">
-                                <i class="bi bi-grid-1x2 me-2"></i> Voir les fonctionnalités
-                            </a>
-                        </div>
-                        <div class="premium-stats">
-                            <div>
-                                <strong>4+</strong>
-                                <span>Modules actifs</span>
-                            </div>
-                            <div>
-                                <strong>100%</strong>
-                                <span>Responsive</span>
-                            </div>
-                            <div>
-                                <strong>24/7</strong>
-                                <span>Supports accessibles</span>
-                            </div>
+                <div class="modern-hero-grid">
+                    <div class="modern-hero-copy">
+                        <span class="premium-kicker mb-3"><i class="bi bi-stars"></i> LMS professionnel</span>
+                        <h1>Formez-vous avec clarté.</h1>
+                        <p>Modules, quiz avancés et progression personnalisée dans un espace simple, rapide et sécurisé par matricule.</p>
+                        <div class="modern-hero-actions">
+                            <a href="#connexion" class="btn btn-glow btn-lg"><i class="bi bi-box-arrow-in-right me-2"></i> Entrer</a>
+                            <a href="#modules" class="btn btn-ghost-light btn-lg"><i class="bi bi-grid-1x2 me-2"></i> Explorer</a>
                         </div>
                     </div>
 
-                    <div class="col-lg-5" id="connexion">
-                        <section class="premium-login glass-panel">
-                            <div class="d-flex align-items-start gap-3 mb-4">
-                                <span class="premium-icon"><i class="bi bi-fingerprint"></i></span>
-                                <div>
-                                    <span class="premium-kicker compact mb-2">
-                                        <i class="bi bi-key"></i> Connexion sécurisée
-                                    </span>
-                                    <h2 class="h3 fw-bold text-white mb-1">Votre espace apprenant</h2>
-                                    <p class="text-white-50 mb-0">Entrez votre matricule pour accéder à vos modules.</p>
-                                </div>
+                    <section class="modern-login-card" id="connexion" aria-labelledby="loginTitle">
+                        <div class="login-orbit">
+                            <img src="image/hoping.png" alt="Espérant GENDANU" class="login-portrait">
+                        </div>
+                        <span class="premium-kicker compact mb-3"><i class="bi bi-fingerprint"></i> Accès apprenant</span>
+                        <h2 id="loginTitle">Connexion</h2>
+                        <form id="loginForm" novalidate>
+                            <label for="studentId" class="form-label">Matricule</label>
+                            <div class="input-group input-group-lg premium-input mb-3">
+                                <span class="input-group-text"><i class="bi bi-person-vcard"></i></span>
+                                <input type="text" class="form-control" id="studentId" placeholder="Ex: TS-AB2026" autocomplete="username" required>
                             </div>
-
-                            <form id="loginForm" novalidate>
-                                <div class="mb-3">
-                                    <label for="studentId" class="form-label fw-semibold small text-uppercase premium-label">Matricule / identifiant</label>
-                                    <div class="input-group input-group-lg premium-input">
-                                        <span class="input-group-text"><i class="bi bi-person-vcard"></i></span>
-                                        <input type="text" class="form-control" id="studentId" placeholder="Ex: DEV-2026-001" autocomplete="username" required>
-                                    </div>
-                                </div>
-
-                                <div id="errorMessage" class="alert alert-danger small d-none py-2" role="alert"></div>
-
-                                <button type="submit" class="btn btn-glow btn-lg w-100">
-                                    <i class="bi bi-unlock me-2"></i> Se connecter
-                                </button>
-                            </form>
-
-                            <div class="premium-secure-row mt-4">
-                                <span><i class="bi bi-shield-check"></i> Données locales</span>
-                                <span><i class="bi bi-lightning-charge"></i> Chargement rapide</span>
-                            </div>
-                        </section>
-                    </div>
+                            <div id="errorMessage" class="alert alert-danger small d-none py-2" role="alert"></div>
+                            <button type="submit" class="btn btn-glow btn-lg w-100"><i class="bi bi-unlock me-2"></i> Se connecter</button>
+                        </form>
+                    </section>
                 </div>
             </div>
         </section>
 
-        <section id="fonctionnalites" class="premium-section">
+        <section id="modules" class="modern-feature-strip">
             <div class="container">
-                <div class="row justify-content-center text-center mb-4">
-                    <div class="col-lg-8">
-                        <span class="premium-kicker mb-3"><i class="bi bi-gem"></i> Expérience premium</span>
-                        <h2 class="premium-section-title fw-bold mb-3">Une plateforme pensée pour apprendre sans friction.</h2>
-                        <p class="premium-section-lead mb-0">Chaque composant met en avant la clarté, l’accessibilité et la progression pédagogique.</p>
-                    </div>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <article class="premium-feature-card glass-panel h-100">
-                            <span class="premium-icon"><i class="bi bi-journal-bookmark"></i></span>
-                            <h3 class="h5 fw-bold text-white mt-4 mb-2">Cours centralisés</h3>
-                            <p class="text-white-50 mb-0">Les modules, supports et ressources sont regroupés dans une interface simple à parcourir.</p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <article class="premium-feature-card glass-panel h-100">
-                            <span class="premium-icon violet"><i class="bi bi-phone"></i></span>
-                            <h3 class="h5 fw-bold text-white mt-4 mb-2">Mobile first</h3>
-                            <p class="text-white-50 mb-0">La navigation reste lisible, rapide et élégante sur smartphone, tablette et desktop.</p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <article class="premium-feature-card glass-panel h-100">
-                            <span class="premium-icon amber"><i class="bi bi-graph-up-arrow"></i></span>
-                            <h3 class="h5 fw-bold text-white mt-4 mb-2">Progression pratique</h3>
-                            <p class="text-white-50 mb-0">L’expérience valorise l’action, les exercices et l’accès rapide aux contenus utiles.</p>
-                        </article>
-                    </div>
+                <div class="modern-feature-grid">
+                    <article>
+                        <i class="bi bi-journal-bookmark"></i>
+                        <strong>Cours structurés</strong>
+                        <span>Des leçons courtes, lisibles et pratiques.</span>
+                    </article>
+                    <article>
+                        <i class="bi bi-patch-question"></i>
+                        <strong>Quiz avancés</strong>
+                        <span>Score, correction, note et reprise.</span>
+                    </article>
+                    <article>
+                        <i class="bi bi-shield-check"></i>
+                        <strong>Accès par ID</strong>
+                        <span>Modules autorisés depuis students.json.</span>
+                    </article>
+                    <article>
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <strong>Progression</strong>
+                        <span>Suivi local pour chaque apprenant.</span>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="premium-footer py-4">
-        <div class="container">
-            <div class="row align-items-center g-3">
-                <div class="col-md-6">
-                    <div class="d-flex align-items-center gap-2 text-white">
-                        <span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span>
-                        <strong>Hoping_Service</strong>
-                    </div>
-                </div>
-                <div class="col-md-6 text-md-end text-white-50">
-                    &copy; 2026 Hoping_Service. Formation professionnelle & encadrement IT.
-                </div>
-            </div>
+    <footer class="modern-home-footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+            <strong>Hoping_Service</strong>
+            <span>&copy; 2026 Formation professionnelle & encadrement IT.</span>
         </div>
     </footer>
 
